@@ -15,8 +15,8 @@ export function TrustDataBand() {
       <div className="container trust-data-band">
         <div className="trust-data-band__intro">
           <span className="section-heading__eyebrow">Dữ liệu năng lực</span>
-          <h2>Trust data nên dùng số liệu thật</h2>
-          <p>Block này được giữ ở dạng tối giản để sẵn thay bằng dữ liệu doanh nghiệp đã xác nhận.</p>
+          <h2>Dữ liệu năng lực đã xác nhận</h2>
+          <p>Block này nên được thay bằng số liệu doanh nghiệp đã xác nhận trước khi public.</p>
         </div>
         <div className="trust-data-band__stats">
           {trustStats.map((item) => (

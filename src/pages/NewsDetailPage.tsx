@@ -49,8 +49,8 @@ export function NewsDetailPage() {
           <ImagePanel
             src="/assets/news-editorial.jpg"
             alt="Hình ảnh minh họa cho bài viết chuyên môn"
-            eyebrow="Editorial cover"
-            title="Bài viết được chọn lọc để mang lại góc nhìn rõ và hữu ích"
+            eyebrow="Editorial"
+            title="Góc nhìn ngắn gọn và hữu ích"
           />
         </div>
       </section>

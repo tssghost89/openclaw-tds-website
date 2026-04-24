@@ -17,8 +17,8 @@ export function HomePage() {
       <AboutSnapshot about={siteData.aboutSnapshot} />
       <ServiceExpertise services={siteData.services} />
       <EnterpriseShowcase />
-      <TrustDataBand />
       <FeaturedProjects projects={siteData.projects} />
+      <TrustDataBand />
       <ProcessSection steps={siteData.process} />
       <ContactCta cta={siteData.cta} />
     </>

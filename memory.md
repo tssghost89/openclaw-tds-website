@@ -34,3 +34,4 @@
 - Refined Services, News, and Careers listing pages together: services now use a more editorial split layout, while news/careers gained intro blocks and stronger hierarchy to feel less like simple catalog grids.
 - Tightened typography/spacing tokens, shortened long copy in service/project/news detail views, and added a dedicated trust-data band as a placeholder structure for real company metrics to strengthen credibility later.
 - Refined that trust-data band to stay honest about placeholders, while further tightening detail-page hierarchy, article spacing, and compact summary cards to better match the premium rules in `musthave.md`.
+- Continued the premium polish pass by reducing homepage repetition between trust sections, simplifying detail-page labels, and tightening editorial wording to stay more restrained and corporate.

@@ -43,7 +43,7 @@ export function ServiceDetailPage() {
           <ImagePanel
             src={imageSrc}
             alt={service.title}
-            eyebrow="Service Focus"
+            eyebrow="Service"
             title={service.title}
           />
           <div className="detail-summary-card reveal-up reveal-delay-1">
