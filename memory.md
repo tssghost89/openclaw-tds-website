@@ -14,4 +14,5 @@
 - Added real imagery into `public/assets` and integrated it into hero, about, news, contact, and project sections.
 - Expanded service, project, news, and career detail pages with richer concrete content such as scope, FAQ, outcomes, gallery items, takeaways, and responsibilities.
 - Upgraded the homepage with additional premium enterprise sections including capability strip, trust signals, hero insights, enterprise showcase, insight metrics, and leadership statement.
+- Redesigned the homepage hero into a large premium image banner with text overlay, improved page transitions and hover/micro-interactions, and refined visual harmony across homepage/detail sections.
 - Verified production build successfully after the latest changes.

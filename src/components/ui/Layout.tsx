@@ -2,10 +2,12 @@ import { Outlet } from 'react-router-dom'
 import { siteData } from '../../data/siteData'
 import { MainFooter } from '../sections/MainFooter'
 import { MainHeader } from '../sections/MainHeader'
+import { PageTransition } from './PageTransition'
 
 export function Layout() {
   return (
     <div className="app-shell">
+      <PageTransition />
       <MainHeader navigation={siteData.navigation} />
       <main>
         <Outlet />

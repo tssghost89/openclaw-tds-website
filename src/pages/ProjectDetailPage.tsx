@@ -6,6 +6,12 @@ import { PageHero } from '../components/ui/PageHero'
 import { RelatedLinks } from '../components/ui/RelatedLinks'
 import { siteData } from '../data/siteData'
 
+const projectImages = {
+  'khoi-nha-dieu-hanh-khu-cong-nghiep': '/assets/industrial-project.jpg',
+  'truong-lien-cap-hien-dai': '/assets/school-project.jpg',
+  'trung-tam-y-te-khu-vuc': '/assets/hospital-project.jpg',
+} as const
+
 export function ProjectDetailPage() {
   const { slug } = useParams()
   const project = siteData.projects.find((item) => item.slug === slug)
@@ -13,6 +19,8 @@ export function ProjectDetailPage() {
   if (!project) {
     return <div className="container empty-state">Không tìm thấy dự án.</div>
   }
+
+  const imageSrc = projectImages[project.slug as keyof typeof projectImages] ?? '/assets/office-project.jpg'
 
   return (
     <>
@@ -29,8 +37,8 @@ export function ProjectDetailPage() {
       <section className="section section--compact-top">
         <div className="container detail-hero-grid">
           <ImagePanel
-            src="/assets/office-project.jpg"
-            alt="Hình ảnh minh họa dự án kiến trúc"
+            src={imageSrc}
+            alt={project.title}
             eyebrow={project.category}
             title={project.title}
           />
