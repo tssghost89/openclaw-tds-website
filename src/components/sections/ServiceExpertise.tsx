@@ -11,19 +11,24 @@ export function ServiceExpertise({ services }: ServiceExpertiseProps) {
       <div className="container">
         <SectionHeading
           eyebrow="Dịch vụ chuyên môn"
-          title="Năng lực thiết kế xây dựng từ bản vẽ kỹ thuật đến phối cảnh trực quan"
-          description="TDS xây dựng hệ dịch vụ tập trung vào triển khai kỹ thuật, giải pháp kiến trúc và tối ưu công năng cho nhiều loại hình công trình."
+          title="Giải pháp thiết kế được phát triển rõ ràng từ bước đầu tiên đến khi hoàn thiện hồ sơ"
+          description="TDS đồng hành cùng chủ đầu tư từ giai đoạn định hướng, tổ chức công năng cho đến trình bày phương án bằng 2D và 3D một cách mạch lạc."
         />
-        <div className="card-grid card-grid--three">
-          {services.map((service) => (
-            <article key={service.title} className="info-card">
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-              <ul>
-                {service.deliverables.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+        <div className="card-grid card-grid--three premium-service-grid">
+          {services.map((service, index) => (
+            <article key={service.title} className="info-card premium-service-card reveal-up">
+              <div className="premium-service-card__media">
+                <span>{`0${index + 1}`}</span>
+              </div>
+              <div className="premium-service-card__body">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <ul>
+                  {service.deliverables.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </article>
           ))}
         </div>

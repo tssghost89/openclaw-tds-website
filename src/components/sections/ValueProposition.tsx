@@ -13,8 +13,8 @@ export function ValueProposition({ values }: ValuePropositionProps) {
         <div>
           <SectionHeading
             eyebrow="Vì sao chọn TDS"
-            title="Thiết kế không chỉ để trình bày, mà để công trình hoạt động hiệu quả"
-            description="Thương hiệu TDS được nhấn mạnh bằng các lợi thế cạnh tranh mang tính chuyên môn, không dùng ngôn ngữ sales quá đà."
+            title="Mỗi phương án được phát triển để công trình vận hành mạch lạc và bền vững"
+            description="TDS theo đuổi cách làm việc rõ ràng, chuẩn mực và tập trung vào giá trị sử dụng thực tế của từng không gian."
           />
           <div className="card-grid card-grid--two">
             {values.map((value) => (

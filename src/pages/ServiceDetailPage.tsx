@@ -26,12 +26,12 @@ export function ServiceDetailPage() {
       />
       <section className="section section--compact-top">
         <div className="container detail-hero-grid">
-          <div className="detail-visual detail-visual--service">
+          <div className="detail-visual detail-visual--service reveal-up">
             <span>Service Focus</span>
             <h3>{service.title}</h3>
             <p>Thiết kế theo hướng rõ đầu ra, đúng nhu cầu sử dụng và dễ kết nối với các bước triển khai tiếp theo.</p>
           </div>
-          <div className="detail-summary-card">
+          <div className="detail-summary-card reveal-up reveal-delay-1">
             <span className="section-heading__eyebrow">Tóm tắt</span>
             <ul>
               {service.deliverables.map((item) => (
@@ -48,12 +48,28 @@ export function ServiceDetailPage() {
         </div>
       </section>
       <section className="section section--light">
+        <div className="container card-grid card-grid--two">
+          <DetailFeatureList title="Phạm vi triển khai" items={service.scope} />
+          <article className="info-card info-card--faq">
+            <h3>Câu hỏi thường gặp</h3>
+            <div className="faq-list">
+              {service.faq.map((item) => (
+                <div key={item.question} className="faq-item">
+                  <strong>{item.question}</strong>
+                  <p>{item.answer}</p>
+                </div>
+              ))}
+            </div>
+          </article>
+        </div>
+      </section>
+      <section className="section">
         <div className="container">
           <article className="info-card">
             <h3>Quy trình thực hiện</h3>
             <div className="timeline-grid timeline-grid--detail">
               {service.process.map((step, index) => (
-                <div key={step} className="timeline-card">
+                <div key={step} className="timeline-card reveal-up">
                   <span>{`0${index + 1}`}</span>
                   <h3>{step}</h3>
                 </div>

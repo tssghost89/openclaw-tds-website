@@ -1,5 +1,5 @@
 import { ContactCta } from '../components/sections/ContactCta'
-import { ShowcasePanel } from '../components/ui/ShowcasePanel'
+import { ImagePanel } from '../components/ui/ImagePanel'
 import { PageHero } from '../components/ui/PageHero'
 import { siteData } from '../data/siteData'
 
@@ -9,7 +9,7 @@ export function ContactPage() {
       <PageHero
         eyebrow="Liên hệ"
         title="Trao đổi nhu cầu thiết kế và nhận định hướng phù hợp cho dự án của bạn"
-        description="Trang liên hệ được xử lý như một điểm chốt CTA rõ ràng, tập trung vào thông tin doanh nghiệp và form giả lập."
+        description="Nếu bạn đang chuẩn bị một dự án mới hoặc cần rà soát lại phương án hiện có, TDS sẵn sàng cùng bạn trao đổi từ những bước đầu tiên."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Liên hệ' }]}
       />
       <section className="section section--light">
@@ -26,7 +26,7 @@ export function ContactPage() {
             </article>
             <article className="info-card">
               <h3>Gửi yêu cầu dự án</h3>
-              <p>Mô phỏng khu vực form liên hệ để bước sau có thể phát triển thành form thật hoặc tích hợp CRM.</p>
+              <p>Chia sẻ ngắn gọn loại công trình, mục tiêu sử dụng và những điều bạn đang quan tâm. TDS sẽ phản hồi với hướng tư vấn phù hợp.</p>
               <div className="form-placeholder">
                 <span>Họ và tên</span>
                 <span>Email</span>
@@ -35,11 +35,11 @@ export function ContactPage() {
               </div>
             </article>
           </div>
-          <ShowcasePanel
+          <ImagePanel
+            src="/assets/about-architecture.jpg"
+            alt="Hình ảnh minh họa không gian làm việc kiến trúc"
             eyebrow="Consultation flow"
-            title="Khối minh họa cho bản đồ / ảnh văn phòng / visual liên hệ"
-            description="Ở phiên bản hoàn thiện, đây là nơi có thể hiển thị map, sơ đồ khu vực hoặc ảnh không gian làm việc của TDS."
-            variant="editorial"
+            title="Một cuộc trao đổi rõ ràng từ đầu sẽ giúp phương án đi đúng hướng ngay từ những bước đầu tiên"
           />
         </div>
       </section>

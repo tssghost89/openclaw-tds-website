@@ -32,6 +32,8 @@ export interface ServiceItem {
   deliverables: string[]
   audience: string[]
   process: string[]
+  scope: string[]
+  faq: { question: string; answer: string }[]
 }
 
 export interface SectorItem {
@@ -47,6 +49,8 @@ export interface ProjectItem {
   description: string
   challenge: string
   solution: string[]
+  outcomes: string[]
+  gallery: string[]
 }
 
 export interface ValueItem {
@@ -66,6 +70,7 @@ export interface NewsItem {
   date: string
   summary: string
   content: string[]
+  takeaways: string[]
 }
 
 export interface JobItem {
@@ -77,6 +82,7 @@ export interface JobItem {
   summary: string
   requirements: string[]
   benefits: string[]
+  responsibilities: string[]
 }
 
 export interface CtaData {

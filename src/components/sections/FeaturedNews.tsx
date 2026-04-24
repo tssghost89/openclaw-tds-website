@@ -12,8 +12,8 @@ export function FeaturedNews({ posts }: FeaturedNewsProps) {
       <div className="container">
         <SectionHeading
           eyebrow="Tin tức & chuyên môn"
-          title="Không chỉ là profile doanh nghiệp, website còn cần chiều sâu kiến thức thiết kế"
-          description="Khối tin tức giúp TDS xây dựng niềm tin chuyên môn và hỗ trợ SEO cho các chủ đề liên quan đến thiết kế xây dựng."
+          title="Những góc nhìn thực tế về thiết kế xây dựng, công năng và cách tổ chức không gian"
+          description="Từ cách trình bày phương án bằng phối cảnh 3D đến việc tối ưu mặt bằng sử dụng, nội dung đều được viết ngắn gọn, rõ ràng và gần với nhu cầu thực tế."
         />
         <div className="card-grid card-grid--three">
           {posts.map((post) => (

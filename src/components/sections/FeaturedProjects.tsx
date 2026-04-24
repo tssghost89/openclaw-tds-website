@@ -12,10 +12,10 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
       <div className="container">
         <SectionHeading
           eyebrow="Dự án tiêu biểu"
-          title="Những định hướng thiết kế thể hiện rõ bài toán công năng và loại hình công trình"
-          description="Dự án được giới thiệu theo hướng portfolio doanh nghiệp: rõ loại hình, rõ quy mô và rõ giá trị thiết kế mang lại."
+          title="Những dự án thể hiện rõ cách TDS xử lý công năng, hình ảnh kiến trúc và trải nghiệm sử dụng"
+          description="Mỗi dự án đều được phát triển từ bối cảnh cụ thể, nhu cầu sử dụng rõ ràng và mục tiêu đầu tư thực tế của chủ đầu tư."
         />
-        <div className="project-list">
+        <div className="project-list premium-project-list">
           {projects.map((project, index) => (
             <ProjectCard key={project.slug} project={project} index={index} featured />
           ))}

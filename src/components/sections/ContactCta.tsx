@@ -8,7 +8,7 @@ interface ContactCtaProps {
 export function ContactCta({ cta }: ContactCtaProps) {
   return (
     <section className="section" id="lien-he">
-      <div className="container cta-banner">
+      <div className="container cta-banner reveal-up">
         <div>
           <span className="section-heading__eyebrow">{cta.eyebrow}</span>
           <h2>{cta.title}</h2>

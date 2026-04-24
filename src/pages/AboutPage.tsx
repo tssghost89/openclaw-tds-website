@@ -1,5 +1,5 @@
 import { ContactCta } from '../components/sections/ContactCta'
-import { ShowcasePanel } from '../components/ui/ShowcasePanel'
+import { ImagePanel } from '../components/ui/ImagePanel'
 import { SectionHeading } from '../components/ui/SectionHeading'
 import { PageHero } from '../components/ui/PageHero'
 import { siteData } from '../data/siteData'
@@ -10,7 +10,7 @@ export function AboutPage() {
       <PageHero
         eyebrow="Giới thiệu"
         title="TDS theo đuổi thiết kế xây dựng có chiều sâu công năng và khả năng triển khai thực tế"
-        description="Trang giới thiệu được thiết kế như hồ sơ năng lực ngắn gọn: rõ triết lý, rõ lĩnh vực công trình và rõ cách TDS tiếp cận bài toán không gian."
+        description="TDS theo đuổi cách tiếp cận thiết kế mạch lạc, cân bằng giữa công năng sử dụng, hình ảnh kiến trúc và khả năng triển khai thực tế."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Giới thiệu' }]}
       />
       <section className="section">
@@ -18,18 +18,18 @@ export function AboutPage() {
           <div className="card-grid card-grid--two">
             <article className="info-card info-card--feature">
               <h3>Tầm nhìn</h3>
-              <p>Trở thành đối tác thiết kế đáng tin cậy cho các công trình cần sự cân bằng giữa thẩm mỹ, hiệu quả sử dụng và tính tổ chức không gian.</p>
+              <p>Trở thành đối tác thiết kế đáng tin cậy cho những công trình cần sự hài hòa giữa hình ảnh kiến trúc, trải nghiệm sử dụng và tính vận hành bền vững.</p>
             </article>
             <article className="info-card info-card--feature">
               <h3>Triết lý thiết kế</h3>
-              <p>Thiết kế trước hết phải đúng với mục tiêu vận hành. Hình thức kiến trúc, trải nghiệm không gian và cấu trúc sử dụng cần cùng đi một hướng.</p>
+              <p>Mỗi phương án được bắt đầu từ nhu cầu thật, được phát triển bằng tư duy hệ thống và hoàn thiện bằng tinh thần chỉn chu trong từng chi tiết.</p>
             </article>
           </div>
-          <ShowcasePanel
+          <ImagePanel
+            src="/assets/about-architecture.jpg"
+            alt="Không gian kiến trúc hiện đại"
             eyebrow="Studio mindset"
-            title="Khối minh họa cho năng lực trình bày hồ sơ năng lực doanh nghiệp"
-            description="Tại bản production, khu vực này có thể thay bằng ảnh công trình, collage phối cảnh hoặc hình ảnh đội ngũ làm việc."
-            variant="architectural"
+            title="Một ngôn ngữ thiết kế rõ ràng giúp công trình giữ được giá trị sử dụng lâu dài"
           />
         </div>
       </section>
@@ -37,8 +37,8 @@ export function AboutPage() {
         <div className="container">
           <SectionHeading
             eyebrow="Năng lực theo lĩnh vực"
-            title="TDS triển khai giải pháp cho công trình dân dụng, công cộng và công nghiệp"
-            description="Capability section này thay vai trò profile matrix trong website doanh nghiệp."
+            title="Giải pháp được phát triển phù hợp với tính chất riêng của từng loại công trình"
+            description="Từ giáo dục, y tế đến công nghiệp, TDS luôn đặt trọng tâm vào công năng, trải nghiệm sử dụng và tính đồng bộ trong hình ảnh công trình."
           />
           <div className="card-grid card-grid--four">
             {siteData.sectors.map((sector) => (

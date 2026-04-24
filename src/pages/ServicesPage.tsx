@@ -9,7 +9,7 @@ export function ServicesPage() {
       <PageHero
         eyebrow="Dịch vụ"
         title="Danh mục dịch vụ thiết kế xây dựng được tổ chức rõ theo logic chuyên môn"
-        description="Trang dịch vụ đóng vai trò điểm vào chính cho nhóm khách hàng đang tìm hiểu năng lực thiết kế của TDS."
+        description="Danh mục dịch vụ được xây dựng để giúp bạn nhanh chóng tìm được hướng tiếp cận phù hợp với loại công trình và nhu cầu sử dụng của mình."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Dịch vụ' }]}
       />
       <section className="section section--light section--compact-top">

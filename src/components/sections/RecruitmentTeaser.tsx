@@ -12,8 +12,8 @@ export function RecruitmentTeaser({ jobs }: RecruitmentTeaserProps) {
       <div className="container">
         <SectionHeading
           eyebrow="Tuyển dụng"
-          title="Tìm kiếm đội ngũ thiết kế cùng xây dựng những công trình có giá trị sử dụng cao"
-          description="Trang tuyển dụng nên giữ phong cách chuyên nghiệp, súc tích và phù hợp với nhóm vị trí kiến trúc, họa viên kỹ thuật và visualizer."
+          title="Gia nhập đội ngũ thiết kế đang theo đuổi những công trình chỉn chu và có giá trị sử dụng lâu dài"
+          description="TDS tìm kiếm những cộng sự nghiêm túc với nghề, yêu thích tư duy thiết kế rõ ràng và mong muốn phát triển cùng các dự án đa lĩnh vực."
         />
         <div className="jobs-list">
           {jobs.map((job) => (

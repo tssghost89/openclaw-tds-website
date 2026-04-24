@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom'
 import { EditorialQuote } from '../components/ui/EditorialQuote'
+import { ImagePanel } from '../components/ui/ImagePanel'
 import { PageHero } from '../components/ui/PageHero'
 import { RelatedLinks } from '../components/ui/RelatedLinks'
-import { ShowcasePanel } from '../components/ui/ShowcasePanel'
 import { siteData } from '../data/siteData'
 
 export function NewsDetailPage() {
@@ -27,20 +27,28 @@ export function NewsDetailPage() {
       />
       <section className="section section--compact-top">
         <div className="container editorial-layout">
-          <article className="info-card article-card">
+          <article className="info-card article-card reveal-up">
             {post.content.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
+            <div className="takeaway-list">
+              <h3>Điểm chính rút ra</h3>
+              <ul>
+                {post.takeaways.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
             <EditorialQuote
-              quote="Nội dung chuyên môn tốt giúp website doanh nghiệp không chỉ đẹp mà còn đáng tin"
-              caption="Content direction for TDS"
+              quote="Một nội dung tốt không cần quá nhiều lời, chỉ cần đủ rõ để người đọc thấy hữu ích và tin tưởng"
+              caption="Biên tập nội dung cho TDS"
             />
           </article>
-          <ShowcasePanel
+          <ImagePanel
+            src="/assets/news-editorial.jpg"
+            alt="Hình ảnh minh họa cho bài viết chuyên môn"
             eyebrow="Editorial cover"
-            title="Khối giả lập ảnh cover / hình minh họa chuyên môn"
-            description="Tin tức trên website TDS nên có visual kèm theo để tăng cảm giác editorial và chất lượng trình bày."
-            variant="editorial"
+            title="Những bài viết được chọn lọc để mang lại góc nhìn rõ ràng và hữu ích cho người đọc"
           />
         </div>
       </section>

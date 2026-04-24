@@ -7,8 +7,9 @@ interface NewsCardProps {
 
 export function NewsCard({ post }: NewsCardProps) {
   return (
-    <article className="news-card">
-      <div className="news-card__cover">
+    <article className="news-card reveal-up">
+      <div className="news-card__cover news-card__cover--image">
+        <img src="/assets/news-editorial.jpg" alt={post.title} />
         <span>{post.category}</span>
       </div>
       <div className="news-card__meta">

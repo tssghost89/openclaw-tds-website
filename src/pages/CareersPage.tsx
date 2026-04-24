@@ -9,7 +9,7 @@ export function CareersPage() {
       <PageHero
         eyebrow="Tuyển dụng"
         title="Cơ hội tham gia đội ngũ thiết kế cho những công trình đa lĩnh vực"
-        description="Trang tuyển dụng giữ tinh thần gọn, rõ và chuyên nghiệp để phù hợp với nhóm ứng viên ngành thiết kế xây dựng."
+        description="Những vị trí đang mở dành cho người muốn phát triển nghề nghiệp trong môi trường thiết kế xây dựng chỉn chu và nhiều chiều sâu thực tế."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Tuyển dụng' }]}
       />
       <section className="section section--light section--compact-top">

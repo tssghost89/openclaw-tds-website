@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom'
 import { DetailFeatureList } from '../components/ui/DetailFeatureList'
 import { EditorialQuote } from '../components/ui/EditorialQuote'
+import { ImagePanel } from '../components/ui/ImagePanel'
 import { PageHero } from '../components/ui/PageHero'
 import { RelatedLinks } from '../components/ui/RelatedLinks'
-import { ShowcasePanel } from '../components/ui/ShowcasePanel'
 import { siteData } from '../data/siteData'
 
 export function ProjectDetailPage() {
@@ -28,12 +28,13 @@ export function ProjectDetailPage() {
       />
       <section className="section section--compact-top">
         <div className="container detail-hero-grid">
-          <div className="detail-visual detail-visual--project">
-            <span>{project.category}</span>
-            <h3>{project.meta}</h3>
-            <p>Case study được trình bày theo logic bài toán – giải pháp – giá trị sử dụng, đúng tinh thần website TDS.</p>
-          </div>
-          <div className="detail-summary-card">
+          <ImagePanel
+            src="/assets/office-project.jpg"
+            alt="Hình ảnh minh họa dự án kiến trúc"
+            eyebrow={project.category}
+            title={project.title}
+          />
+          <div className="detail-summary-card reveal-up reveal-delay-1">
             <span className="section-heading__eyebrow">Bài toán dự án</span>
             <p>{project.challenge}</p>
           </div>
@@ -44,23 +45,26 @@ export function ProjectDetailPage() {
           <div className="project-detail-layout__main">
             <div className="card-grid card-grid--two">
               <DetailFeatureList title="Giải pháp thiết kế" items={project.solution} />
-              <article className="info-card">
-                <h3>Thông tin nhanh</h3>
-                <p>{project.meta}</p>
-                <p>{project.category}</p>
-              </article>
+              <DetailFeatureList title="Kết quả đạt được" items={project.outcomes} />
+            </div>
+            <div className="card-grid card-grid--three gallery-grid">
+              {project.gallery.map((item) => (
+                <article key={item} className="gallery-card reveal-up">
+                  <span>Gallery</span>
+                  <h3>{item}</h3>
+                </article>
+              ))}
             </div>
             <EditorialQuote
-              quote="Một dự án tốt là dự án mà kiến trúc, công năng và vận hành đều nói cùng một ngôn ngữ"
-              caption="TDS Design Perspective"
+              quote="Một dự án tốt luôn bắt đầu từ nhu cầu rõ ràng và kết thúc ở trải nghiệm sử dụng mạch lạc"
+              caption="Góc nhìn từ TDS"
             />
           </div>
-          <ShowcasePanel
-            eyebrow="Project narrative"
-            title="Khối mô phỏng gallery / phối cảnh / bản vẽ"
-            description="Đây là nơi website production có thể hiển thị ảnh phối cảnh lớn, mặt bằng, sơ đồ công năng hoặc cụm hình ảnh của dự án."
-            variant="technical"
-          />
+          <div className="detail-visual detail-visual--project reveal-up">
+            <span>{project.category}</span>
+            <h3>{project.meta}</h3>
+            <p>Dự án được phát triển theo cách cân bằng giữa hình ảnh kiến trúc, công năng sử dụng và khả năng vận hành lâu dài.</p>
+          </div>
         </div>
       </section>
       <RelatedLinks

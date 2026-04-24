@@ -9,7 +9,7 @@ export function ProjectsPage() {
       <PageHero
         eyebrow="Dự án"
         title="Portfolio dự án theo từng loại hình công trình và bài toán thiết kế"
-        description="Trang dự án được định hướng để thể hiện rõ năng lực thực chiến của TDS trên nhiều lĩnh vực công trình."
+        description="Mỗi dự án là một cách tiếp cận khác nhau cho bài toán công năng, hình ảnh công trình và trải nghiệm sử dụng."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Dự án' }]}
       />
       <section className="section section--light section--compact-top">
