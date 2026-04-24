@@ -11,12 +11,12 @@ export function SectorExpertise({ sectors }: SectorExpertiseProps) {
       <div className="container">
         <SectionHeading
           eyebrow="Lĩnh vực công trình"
-          title="Một đội ngũ thiết kế có thể làm việc linh hoạt trên nhiều loại hình công trình khác nhau"
-          description="Dù là giáo dục, y tế, công cộng hay công nghiệp, điều TDS giữ nhất quán luôn là tư duy công năng rõ ràng và hình ảnh kiến trúc chỉn chu."
+          title="Giải pháp thiết kế cho nhiều nhóm công trình với cùng một tinh thần chỉn chu và mạch lạc"
+          description="Mỗi lĩnh vực có yêu cầu riêng, nhưng đều cần một cách tiếp cận rõ ràng về công năng, hình ảnh và trải nghiệm sử dụng."
         />
         <div className="card-grid card-grid--four sector-grid-premium">
-          {sectors.map((sector, index) => (
-            <article key={sector.title} className="sector-card reveal-up">
+          {sectors.slice(0, 6).map((sector, index) => (
+            <article key={sector.title} className="sector-card" data-reveal>
               <span className="sector-card__index">{`0${index + 1}`}</span>
               <h3>{sector.title}</h3>
               <p>{sector.description}</p>

@@ -19,7 +19,7 @@ export function AboutSnapshot({ about }: AboutSnapshotProps) {
           />
           <div className="about-snapshot__quote">
             <span>Design for real use</span>
-            <p>TDS ưu tiên một cách tiếp cận điềm tĩnh, chuẩn xác và đủ chiều sâu để mỗi công trình vừa đẹp, vừa dễ sử dụng, vừa bền giá trị theo thời gian.</p>
+            <p>TDS ưu tiên giải pháp rõ ràng, dễ sử dụng và có giá trị lâu dài cho từng loại công trình.</p>
           </div>
         </div>
         <div className="premium-about-layout__visuals">
@@ -27,10 +27,10 @@ export function AboutSnapshot({ about }: AboutSnapshotProps) {
             src="/assets/about-architecture.jpg"
             alt="Khối kiến trúc hiện đại"
             eyebrow="Architectural Direction"
-            title="Ngôn ngữ kiến trúc hiện đại luôn đi cùng tổ chức công năng mạch lạc"
+            title="Một ngôn ngữ thiết kế hiện đại luôn cần đi cùng công năng mạch lạc"
           />
-          <div className="about-snapshot__stats">
-            {about.stats.map((stat) => (
+          <div className="about-snapshot__stats about-snapshot__stats--compact">
+            {about.stats.slice(0, 2).map((stat) => (
               <StatCard key={stat.label} value={stat.value} label={stat.label} />
             ))}
           </div>

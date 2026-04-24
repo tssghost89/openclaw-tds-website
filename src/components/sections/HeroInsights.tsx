@@ -1,23 +1,19 @@
 export function HeroInsights() {
   const insights = [
     {
-      value: '08+',
-      label: 'Nhóm loại hình công trình trọng tâm',
-    },
-    {
       value: '2D / 3D',
-      label: 'Quy trình triển khai đồng bộ từ kỹ thuật đến trình bày',
+      label: 'Triển khai đồng bộ từ kỹ thuật đến trình bày',
     },
     {
-      value: 'Function First',
-      label: 'Tư duy lấy công năng và vận hành làm nền tảng',
+      value: 'Multi-sector',
+      label: 'Thiết kế cho dân dụng, công cộng và công nghiệp',
     },
   ]
 
   return (
     <div className="hero-insights">
       {insights.map((item) => (
-        <article key={item.label} className="hero-insight-card reveal-up">
+        <article key={item.label} className="hero-insight-card">
           <strong>{item.value}</strong>
           <span>{item.label}</span>
         </article>
