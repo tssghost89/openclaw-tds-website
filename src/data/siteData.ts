@@ -62,8 +62,8 @@ export const siteData: SiteData = {
     description:
       'TDS phát triển phương án từ nhu cầu sử dụng, luồng vận hành và tính hiệu quả của từng không gian.',
     stats: [
-      { value: '02D', label: 'Triển khai bản vẽ AutoCAD chuẩn chỉnh' },
-      { value: '03D', label: 'Phối cảnh trực quan, thuyết phục' },
+      { value: 'Tư vấn', label: 'Rà soát nhu cầu, phạm vi và hướng tiếp cận trước khi triển khai thiết kế.' },
+      { value: 'Tiêu chuẩn', label: 'Phương án được phát triển theo logic công năng và tiêu chuẩn trình bày rõ ràng.' },
       { value: '08+', label: 'Nhóm lĩnh vực công trình trọng tâm' },
       { value: 'UX Space', label: 'Tối ưu trải nghiệm sử dụng không gian' },
     ],

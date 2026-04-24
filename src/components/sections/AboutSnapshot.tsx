@@ -21,6 +21,11 @@ export function AboutSnapshot({ about }: AboutSnapshotProps) {
             <span>Design for real use</span>
             <p>TDS ưu tiên công năng rõ, triển khai gọn và hiệu quả sử dụng lâu dài.</p>
           </div>
+          <div className="about-snapshot__stats about-snapshot__stats--compact about-snapshot__stats--left">
+            {about.stats.slice(0, 2).map((stat) => (
+              <StatCard key={stat.label} value={stat.value} label={stat.label} />
+            ))}
+          </div>
         </div>
         <div className="premium-about-layout__visuals">
           <ImagePanel
@@ -29,11 +34,6 @@ export function AboutSnapshot({ about }: AboutSnapshotProps) {
             eyebrow="Architectural Direction"
             title="Thiết kế hiện đại cần đi cùng công năng rõ ràng"
           />
-          <div className="about-snapshot__stats about-snapshot__stats--compact">
-            {about.stats.slice(0, 2).map((stat) => (
-              <StatCard key={stat.label} value={stat.value} label={stat.label} />
-            ))}
-          </div>
         </div>
       </div>
     </section>
