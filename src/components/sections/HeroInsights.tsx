@@ -1,12 +1,16 @@
 export function HeroInsights() {
   const insights = [
     {
-      value: '2D / 3D',
-      label: 'Triển khai đồng bộ từ kỹ thuật đến trình bày',
+      value: 'Thiết kế có cơ sở',
+      label: 'Mỗi phương án đều bắt đầu từ nhu cầu thật và điều kiện thực tế.',
     },
     {
-      value: 'Multi-sector',
-      label: 'Thiết kế cho dân dụng, công cộng và công nghiệp',
+      value: 'Triển khai mạch lạc',
+      label: 'Hồ sơ, phối cảnh và trình bày được phát triển trong cùng một logic.',
+    },
+    {
+      value: 'Chuẩn mực chuyên nghiệp',
+      label: 'Quy trình rõ ràng, phối hợp hiệu quả và dễ đi đến bước tiếp theo.',
     },
   ]
 
