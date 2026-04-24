@@ -1,7 +1,9 @@
 import { useParams } from 'react-router-dom'
 import { DetailFeatureList } from '../components/ui/DetailFeatureList'
+import { EditorialQuote } from '../components/ui/EditorialQuote'
 import { PageHero } from '../components/ui/PageHero'
 import { RelatedLinks } from '../components/ui/RelatedLinks'
+import { ShowcasePanel } from '../components/ui/ShowcasePanel'
 import { siteData } from '../data/siteData'
 
 export function ProjectDetailPage() {
@@ -38,13 +40,27 @@ export function ProjectDetailPage() {
         </div>
       </section>
       <section className="section">
-        <div className="container card-grid card-grid--two">
-          <DetailFeatureList title="Giải pháp thiết kế" items={project.solution} />
-          <article className="info-card">
-            <h3>Thông tin nhanh</h3>
-            <p>{project.meta}</p>
-            <p>{project.category}</p>
-          </article>
+        <div className="container project-detail-layout">
+          <div className="project-detail-layout__main">
+            <div className="card-grid card-grid--two">
+              <DetailFeatureList title="Giải pháp thiết kế" items={project.solution} />
+              <article className="info-card">
+                <h3>Thông tin nhanh</h3>
+                <p>{project.meta}</p>
+                <p>{project.category}</p>
+              </article>
+            </div>
+            <EditorialQuote
+              quote="Một dự án tốt là dự án mà kiến trúc, công năng và vận hành đều nói cùng một ngôn ngữ"
+              caption="TDS Design Perspective"
+            />
+          </div>
+          <ShowcasePanel
+            eyebrow="Project narrative"
+            title="Khối mô phỏng gallery / phối cảnh / bản vẽ"
+            description="Đây là nơi website production có thể hiển thị ảnh phối cảnh lớn, mặt bằng, sơ đồ công năng hoặc cụm hình ảnh của dự án."
+            variant="technical"
+          />
         </div>
       </section>
       <RelatedLinks

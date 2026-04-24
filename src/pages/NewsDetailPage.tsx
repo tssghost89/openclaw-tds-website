@@ -1,6 +1,8 @@
 import { useParams } from 'react-router-dom'
+import { EditorialQuote } from '../components/ui/EditorialQuote'
 import { PageHero } from '../components/ui/PageHero'
 import { RelatedLinks } from '../components/ui/RelatedLinks'
+import { ShowcasePanel } from '../components/ui/ShowcasePanel'
 import { siteData } from '../data/siteData'
 
 export function NewsDetailPage() {
@@ -24,12 +26,22 @@ export function NewsDetailPage() {
         ]}
       />
       <section className="section section--compact-top">
-        <div className="container article-layout">
+        <div className="container editorial-layout">
           <article className="info-card article-card">
             {post.content.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
+            <EditorialQuote
+              quote="Nội dung chuyên môn tốt giúp website doanh nghiệp không chỉ đẹp mà còn đáng tin"
+              caption="Content direction for TDS"
+            />
           </article>
+          <ShowcasePanel
+            eyebrow="Editorial cover"
+            title="Khối giả lập ảnh cover / hình minh họa chuyên môn"
+            description="Tin tức trên website TDS nên có visual kèm theo để tăng cảm giác editorial và chất lượng trình bày."
+            variant="editorial"
+          />
         </div>
       </section>
       <RelatedLinks

@@ -1,0 +1,9 @@
+services:
+  website:
+    container_name: tds-website
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4004:4004"
+    restart: unless-stopped

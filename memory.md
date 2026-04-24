@@ -7,6 +7,7 @@
 - Built reusable UI and section components for homepage, listing pages, and detail pages.
 - Added routing for Home, About, Services, Service Detail, Projects, Project Detail, News, News Detail, Careers, Career Detail, and Contact.
 - Established a visual system aligned to TDS positioning: architectural, technical, functional, and modern.
-- Added reusable cards, breadcrumbs, page hero, filter chips, related links, and detail feature components.
+- Added reusable cards, breadcrumbs, page hero, filter chips, related links, detail feature components, showcase panels, and editorial quote blocks.
 - Completed multiple UI polish passes to improve commercial readiness and consistency across list/detail pages.
+- Added Docker support with `Dockerfile`, `docker-compose.yml`, nginx config, container name `tds-website`, and serving on port `4004`.
 - Verified production build successfully after the latest changes.
