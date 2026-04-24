@@ -30,7 +30,7 @@ export function RelatedLinks({ title, items }: RelatedLinksProps) {
         </div>
         <div className="card-grid card-grid--three">
           {items.map((item) => (
-            <article key={item.href} className="info-card related-card" data-reveal>
+            <article key={item.href} className="info-card related-card reveal-up">
               <img src={resolveRelatedImage(item.meta)} alt={item.title} className="related-card__image" />
               <div className="related-card__content">
                 {item.meta ? <span className="related-card__meta">{item.meta}</span> : null}

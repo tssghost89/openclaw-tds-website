@@ -27,7 +27,7 @@ export function ServiceExpertise({ services }: ServiceExpertiseProps) {
           {services.map((service, index) => {
             const imageSrc = serviceImages[service.slug as keyof typeof serviceImages] ?? '/assets/service-architecture.jpg'
             return (
-              <article key={service.title} className="info-card premium-service-card" data-reveal>
+              <article key={service.title} className="info-card premium-service-card reveal-up">
                 <div className="premium-service-card__media premium-service-card__media--image">
                   <img src={imageSrc} alt={service.title} />
                   <div className="premium-service-card__overlay">

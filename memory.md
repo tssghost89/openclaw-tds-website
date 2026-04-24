@@ -17,4 +17,5 @@
 - Redesigned the homepage hero into a large premium image banner with text overlay, improved page transitions and hover/micro-interactions, and refined visual harmony across homepage/detail sections.
 - Added more content-specific imagery for services, news, related cards, and richer project detail galleries, while tightening typography rhythm and spacing across the site.
 - Simplified the homepage by removing excess sections, reducing copy density, trimming hero/about/sector content, and keeping only the strongest core sections for a cleaner premium presentation.
+- Shortened copy across core pages and `siteData.ts` so content stays clearer, lighter, and easier to scan while preserving the main message.
 - Verified production build successfully after the latest changes.

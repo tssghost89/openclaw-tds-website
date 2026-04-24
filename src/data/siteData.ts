@@ -40,9 +40,9 @@ export const siteData: SiteData = {
   ],
   hero: {
     eyebrow: 'TDS Construction Design',
-    title: 'Giải pháp thiết kế xây dựng hiện đại cho công trình dân dụng, công cộng và công nghiệp',
+    title: 'Giải pháp thiết kế xây dựng cho công trình dân dụng, công cộng và công nghiệp',
     description:
-      'TDS tập trung vào thiết kế 2D kỹ thuật, phối cảnh 3D, tổ chức công năng và phát triển phương án không gian cho tòa nhà, trường học, bệnh viện, công trình công cộng, khu công nghiệp và nhà xưởng.',
+      'TDS cung cấp thiết kế 2D, phối cảnh 3D và giải pháp công năng cho tòa nhà, trường học, bệnh viện, công trình công cộng, khu công nghiệp và nhà xưởng.',
     primaryAction: 'Khám phá dịch vụ',
     secondaryAction: 'Xem dự án tiêu biểu',
     metrics: [
@@ -58,9 +58,9 @@ export const siteData: SiteData = {
   },
   aboutSnapshot: {
     eyebrow: 'Về TDS',
-    title: 'Thiết kế không chỉ đẹp mà còn phải đúng nhu cầu sử dụng',
+    title: 'Thiết kế cần đẹp, rõ công năng và dễ triển khai',
     description:
-      'TDS xây dựng giải pháp thiết kế dựa trên mục tiêu vận hành, luồng sử dụng và tính hiệu quả của từng không gian. Mỗi dự án được phát triển theo tư duy kỹ thuật, thẩm mỹ và khả năng triển khai thực tế.',
+      'TDS phát triển phương án từ nhu cầu sử dụng, luồng vận hành và tính hiệu quả của từng không gian.',
     stats: [
       { value: '02D', label: 'Triển khai bản vẽ AutoCAD chuẩn chỉnh' },
       { value: '03D', label: 'Phối cảnh trực quan, thuyết phục' },
@@ -72,7 +72,7 @@ export const siteData: SiteData = {
     {
       slug: 'thiet-ke-2d-ky-thuat',
       title: 'Thiết kế 2D kỹ thuật',
-      description: 'Triển khai bản vẽ mặt bằng, mặt đứng, mặt cắt và hồ sơ kỹ thuật rõ ràng cho quá trình phát triển phương án.',
+      description: 'Triển khai bản vẽ mặt bằng, mặt đứng, mặt cắt và hồ sơ kỹ thuật rõ ràng.',
       deliverables: ['Mặt bằng chức năng', 'Hồ sơ AutoCAD', 'Bản vẽ triển khai cơ sở'],
       audience: ['Chủ đầu tư cần hồ sơ thiết kế nền tảng', 'Dự án cần làm rõ tổ chức mặt bằng', 'Công trình yêu cầu phối hợp kỹ thuật sớm'],
       process: ['Khảo sát nhu cầu', 'Xây dựng mặt bằng sơ bộ', 'Triển khai bản vẽ kỹ thuật', 'Rà soát và hoàn thiện hồ sơ'],
@@ -85,7 +85,7 @@ export const siteData: SiteData = {
     {
       slug: 'thiet-ke-3d-phoi-canh',
       title: 'Thiết kế 3D phối cảnh',
-      description: 'Mô phỏng không gian, vật liệu và hình ảnh công trình nhằm giúp khách hàng hình dung phương án trực quan.',
+      description: 'Mô phỏng không gian và vật liệu để trình bày phương án trực quan hơn.',
       deliverables: ['Phối cảnh ngoại thất', 'Phối cảnh nội thất', 'Góc nhìn trình bày'],
       audience: ['Dự án cần thuyết trình ý tưởng', 'Phương án cần hình ảnh trực quan', 'Chủ đầu tư muốn đánh giá thẩm mỹ không gian'],
       process: ['Nhận bản vẽ nền', 'Dựng khối 3D', 'Hiệu chỉnh vật liệu và ánh sáng', 'Xuất bộ ảnh hoàn thiện'],
@@ -98,7 +98,7 @@ export const siteData: SiteData = {
     {
       slug: 'thiet-ke-kien-truc-cong-trinh',
       title: 'Thiết kế kiến trúc công trình',
-      description: 'Phát triển concept và giải pháp kiến trúc cho nhiều loại hình công trình từ dân dụng đến công cộng và công nghiệp.',
+      description: 'Phát triển concept và giải pháp kiến trúc cho nhiều loại hình công trình.',
       deliverables: ['Concept kiến trúc', 'Tổ chức mặt bằng', 'Giải pháp mặt đứng'],
       audience: ['Tòa nhà', 'Trường học', 'Bệnh viện', 'Công trình công cộng'],
       process: ['Nghiên cứu bài toán sử dụng', 'Đề xuất concept', 'Tinh chỉnh tổ chức không gian', 'Triển khai hồ sơ trình bày'],
@@ -111,7 +111,7 @@ export const siteData: SiteData = {
     {
       slug: 'thiet-ke-canh-quan',
       title: 'Thiết kế cảnh quan',
-      description: 'Kết nối công trình với không gian mở, mảng xanh và trải nghiệm di chuyển tổng thể.',
+      description: 'Kết nối công trình với không gian mở, mảng xanh và trải nghiệm tổng thể.',
       deliverables: ['Tổng mặt bằng cảnh quan', 'Phân khu ngoài trời', 'Điểm nhấn không gian'],
       audience: ['Khuôn viên trường học', 'Công trình công cộng', 'Tổ hợp văn phòng', 'Dự án có không gian mở lớn'],
       process: ['Phân tích bối cảnh', 'Đề xuất zoning', 'Phát triển điểm nhấn cảnh quan', 'Hoàn thiện phương án'],
@@ -124,7 +124,7 @@ export const siteData: SiteData = {
     {
       slug: 'toi-uu-cong-nang-su-dung',
       title: 'Tối ưu công năng sử dụng',
-      description: 'Phân tích nhu cầu sử dụng và tái cấu trúc không gian nhằm nâng cao hiệu quả vận hành.',
+      description: 'Phân tích nhu cầu sử dụng và tối ưu lại không gian để vận hành hiệu quả hơn.',
       deliverables: ['Sơ đồ công năng', 'Luồng di chuyển', 'Đề xuất tối ưu diện tích'],
       audience: ['Văn phòng', 'Bệnh viện', 'Nhà xưởng', 'Công trình cải tạo'],
       process: ['Đánh giá hiện trạng', 'Phân tích luồng sử dụng', 'Tái cấu trúc khu chức năng', 'Đề xuất giải pháp tối ưu'],
@@ -137,7 +137,7 @@ export const siteData: SiteData = {
     {
       slug: 'tu-van-giai-phap-thiet-ke',
       title: 'Tư vấn giải pháp thiết kế',
-      description: 'Định hướng thiết kế phù hợp mục tiêu đầu tư, tính chất công trình và nhu cầu khai thác dài hạn.',
+      description: 'Định hướng thiết kế phù hợp với mục tiêu đầu tư và nhu cầu sử dụng dài hạn.',
       deliverables: ['Tư vấn định hướng', 'Phương án sơ bộ', 'Khuyến nghị triển khai'],
       audience: ['Chủ đầu tư mới bắt đầu dự án', 'Dự án đa lĩnh vực', 'Công trình cần phân tích tiền khả thi'],
       process: ['Tiếp nhận yêu cầu', 'Phân tích ưu tiên', 'Đề xuất chiến lược thiết kế', 'Chốt định hướng triển khai'],
@@ -164,7 +164,7 @@ export const siteData: SiteData = {
       title: 'Khối nhà điều hành khu công nghiệp',
       category: 'Khu công nghiệp',
       meta: 'Bắc Ninh · 12.000m²',
-      description: 'Tập trung tổ chức luồng tiếp cận, phân khu vận hành và hình ảnh kiến trúc đồng bộ cho toàn khu.',
+      description: 'Tổ chức luồng tiếp cận, phân khu vận hành và hình ảnh kiến trúc đồng bộ.',
       challenge: 'Dự án cần đồng thời giải quyết hình ảnh doanh nghiệp, luồng vận hành và khả năng mở rộng lâu dài.',
       solution: ['Tách rõ khu điều hành và khu hậu cần', 'Tạo trục tiếp cận trực quan', 'Đồng bộ mặt đứng và cảnh quan cổng vào'],
       outcomes: ['Tăng rõ nhận diện khu điều hành', 'Cải thiện logic tiếp cận cho khách và nội bộ', 'Tạo nền tảng mở rộng giai đoạn sau'],
@@ -175,7 +175,7 @@ export const siteData: SiteData = {
       title: 'Trường liên cấp định hướng hiện đại',
       category: 'Giáo dục',
       meta: 'Hà Nội · 8.500m²',
-      description: 'Phát triển không gian học tập có tính kết nối, ánh sáng tốt và giao thông nội bộ rõ ràng.',
+      description: 'Phát triển không gian học tập kết nối, sáng và dễ vận hành.',
       challenge: 'Bài toán là tổ chức không gian linh hoạt cho nhiều khối tuổi và đảm bảo vận hành an toàn.',
       solution: ['Phân lớp khu học tập', 'Tối ưu sân trong và mảng xanh', 'Tạo chuỗi giao thông ngắn, dễ kiểm soát'],
       outcomes: ['Cải thiện chất lượng không gian học tập', 'Tăng khả năng giám sát giao thông nội bộ', 'Nâng cao cảm giác mở và thân thiện'],
@@ -186,7 +186,7 @@ export const siteData: SiteData = {
       title: 'Trung tâm y tế khu vực',
       category: 'Y tế',
       meta: 'Đà Nẵng · 6.200m²',
-      description: 'Giải quyết bài toán phân khu chức năng, luồng khám chữa bệnh và tính thuận tiện trong vận hành.',
+      description: 'Giải quyết phân khu chức năng, luồng khám chữa bệnh và tính thuận tiện khi vận hành.',
       challenge: 'Yêu cầu cân bằng giữa công năng nghiêm ngặt, sự thuận tiện cho người dùng và hình ảnh công trình thân thiện.',
       solution: ['Phân khu tiếp nhận rõ ràng', 'Tối ưu giao thông dọc', 'Tổ chức ánh sáng tự nhiên tại vùng chờ'],
       outcomes: ['Rút ngắn hành trình tiếp cận các khu chức năng', 'Tăng trải nghiệm người dùng tại khu chờ', 'Củng cố hình ảnh cơ sở y tế hiện đại'],

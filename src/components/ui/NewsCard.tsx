@@ -15,7 +15,7 @@ export function NewsCard({ post }: NewsCardProps) {
   const imageSrc = newsImages[post.slug as keyof typeof newsImages] ?? '/assets/news-editorial.jpg'
 
   return (
-    <article className="news-card" data-reveal>
+    <article className="news-card reveal-up">
       <div className="news-card__cover news-card__cover--image">
         <img src={imageSrc} alt={post.title} />
         <span>{post.category}</span>

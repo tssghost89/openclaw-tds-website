@@ -44,7 +44,7 @@ export function ProjectDetailPage() {
             eyebrow={project.category}
             title={project.title}
           />
-          <div className="detail-summary-card" data-reveal>
+          <div className="detail-summary-card reveal-up reveal-delay-1">
             <span className="section-heading__eyebrow">Bài toán dự án</span>
             <p>{project.challenge}</p>
           </div>

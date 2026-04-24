@@ -8,8 +8,8 @@ export function ContactPage() {
     <>
       <PageHero
         eyebrow="Liên hệ"
-        title="Trao đổi nhu cầu thiết kế và nhận định hướng phù hợp cho dự án của bạn"
-        description="Nếu bạn đang chuẩn bị một dự án mới hoặc cần rà soát lại phương án hiện có, TDS sẵn sàng cùng bạn trao đổi từ những bước đầu tiên."
+        title="Trao đổi nhu cầu thiết kế và tìm hướng đi phù hợp cho dự án của bạn"
+        description="Nếu bạn đang chuẩn bị một dự án mới hoặc muốn rà soát phương án hiện có, TDS sẵn sàng đồng hành từ những bước đầu tiên."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Liên hệ' }]}
       />
       <section className="section section--light">

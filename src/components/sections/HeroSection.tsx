@@ -10,7 +10,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
   return (
     <section className="hero-section hero-section--premium" id="trang-chu">
       <div className="container">
-        <div className="hero-banner" data-reveal>
+        <div className="hero-banner">
           <img src="/assets/hero-building.jpg" alt="Công trình kiến trúc hiện đại" className="hero-banner__image" />
           <img src="/assets/hero-overlay.jpg" alt="Chi tiết kiến trúc hiện đại" className="hero-banner__image hero-banner__image--secondary" />
           <div className="hero-banner__overlay" />

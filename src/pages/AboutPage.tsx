@@ -9,8 +9,8 @@ export function AboutPage() {
     <>
       <PageHero
         eyebrow="Giới thiệu"
-        title="TDS theo đuổi thiết kế xây dựng có chiều sâu công năng và khả năng triển khai thực tế"
-        description="TDS theo đuổi cách tiếp cận thiết kế mạch lạc, cân bằng giữa công năng sử dụng, hình ảnh kiến trúc và khả năng triển khai thực tế."
+        title="TDS theo đuổi thiết kế rõ công năng và dễ triển khai"
+        description="TDS cân bằng giữa công năng, hình ảnh kiến trúc và tính thực tế trong từng phương án."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Giới thiệu' }]}
       />
       <section className="section">

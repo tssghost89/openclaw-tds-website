@@ -101,8 +101,6 @@ button, a { font: inherit; }
 .hero-floating-card--glass { background: linear-gradient(160deg, rgba(15,23,42,0.68), rgba(30,41,59,0.48)); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.12); }
 .hero-floating-card strong { display: block; margin-bottom: 12px; font-size: 1.1rem; color: var(--color-accent-300); }
 .hero-floating-card p { margin: 0; color: rgba(255,255,255,0.82); line-height: 1.8; }
-.page-transition { position: fixed; inset: 0; pointer-events: none; opacity: 0; background: linear-gradient(180deg, rgba(248,250,252,0.0), rgba(248,250,252,0.86)); transition: opacity 320ms ease; z-index: 60; }
-.page-transition.is-visible { opacity: 1; }
 .hero-visual__panel--primary { min-height: 360px; background: linear-gradient(160deg, var(--color-primary-900), #162238); color: var(--color-neutral-0); }
 .hero-visual__blueprint { position: absolute; inset: 0; background: linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 36px 36px; mask-image: linear-gradient(180deg, rgba(0,0,0,0.9), rgba(0,0,0,0.2)); animation: drift 18s linear infinite; }
 .hero-visual__panel--primary span, .hero-visual__panel--secondary span { position: relative; z-index: 1; display: inline-flex; margin-bottom: 20px; font-size: 0.9rem; letter-spacing: 0.16em; text-transform: uppercase; }
