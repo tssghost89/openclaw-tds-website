@@ -15,14 +15,16 @@ export function CareerDetailPage() {
   return (
     <>
       <PageHero
-        eyebrow="Chi tiết tuyển dụng"
+        eyebrow="Tuyển dụng"
         title={job.title}
-        description={job.summary}
+        description="Thông tin chính của vị trí này."
         breadcrumbs={[
           { label: 'Trang chủ', href: '/' },
           { label: 'Tuyển dụng', href: '/tuyen-dung' },
           { label: job.title },
         ]}
+        imageSrc="/assets/office-project.jpg"
+        imageAlt={job.title}
       />
       <section className="section section--compact-top">
         <div className="container detail-hero-grid">
@@ -31,7 +33,7 @@ export function CareerDetailPage() {
             <h3>{job.type}</h3>
             <p>{job.location}</p>
           </div>
-          <div className="detail-summary-card reveal-up reveal-delay-1">
+          <div className="detail-summary-card detail-summary-card--compact reveal-up reveal-delay-1">
             <span className="section-heading__eyebrow">Mô tả nhanh</span>
             <p>{job.summary}</p>
           </div>

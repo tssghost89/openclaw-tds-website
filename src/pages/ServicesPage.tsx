@@ -8,9 +8,11 @@ export function ServicesPage() {
     <>
       <PageHero
         eyebrow="Dịch vụ"
-        title="Dịch vụ thiết kế xây dựng được tổ chức rõ theo từng nhóm chuyên môn"
-        description="Giúp bạn nhanh chóng tìm được hướng tiếp cận phù hợp với loại công trình và nhu cầu sử dụng."
+        title="Dịch vụ thiết kế chính"
+        description="Các nhóm dịch vụ cốt lõi của TDS."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Dịch vụ' }]}
+        imageSrc="/assets/service-architecture.jpg"
+        imageAlt="Dịch vụ thiết kế kiến trúc"
       />
       <section className="section section--light section--compact-top">
         <div className="container">
@@ -18,18 +20,23 @@ export function ServicesPage() {
         </div>
       </section>
       <section className="section section--compact-top">
-        <div className="container card-grid card-grid--three">
-          {siteData.services.map((service) => (
-            <article key={service.slug} className="info-card info-card--service">
-              <div className="info-card__badge">{service.title}</div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-              <ul>
-                {service.deliverables.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <Link to={`/dich-vu/${service.slug}`}>Xem chi tiết dịch vụ</Link>
+        <div className="container services-editorial-list">
+          {siteData.services.map((service, index) => (
+            <article key={service.slug} className="info-card info-card--service services-editorial-card" data-reveal>
+              <div className="services-editorial-card__index">{`0${index + 1}`}</div>
+              <div className="services-editorial-card__main">
+                <div className="info-card__badge">{service.title}</div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+              <div className="services-editorial-card__meta">
+                <ul>
+                  {service.deliverables.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+                <Link to={`/dich-vu/${service.slug}`}>Xem chi tiết dịch vụ</Link>
+              </div>
             </article>
           ))}
         </div>

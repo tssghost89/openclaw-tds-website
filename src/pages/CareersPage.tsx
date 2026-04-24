@@ -8,9 +8,11 @@ export function CareersPage() {
     <>
       <PageHero
         eyebrow="Tuyển dụng"
-        title="Cơ hội tham gia đội ngũ thiết kế cho những công trình đa lĩnh vực"
-        description="Những vị trí dành cho người muốn phát triển nghề nghiệp trong môi trường thiết kế xây dựng chỉn chu."
+        title="Cơ hội tại TDS"
+        description="Một số vị trí đang tuyển."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Tuyển dụng' }]}
+        imageSrc="/assets/office-project.jpg"
+        imageAlt="Cơ hội nghề nghiệp tại TDS"
       />
       <section className="section section--light section--compact-top">
         <div className="container">
@@ -18,7 +20,16 @@ export function CareersPage() {
         </div>
       </section>
       <section className="section section--compact-top">
-        <div className="container jobs-list">
+        <div className="container editorial-intro-layout editorial-intro-layout--compact">
+          <div className="editorial-intro-layout__main">
+            <span className="section-heading__eyebrow">Môi trường làm việc</span>
+            <h2>TDS tìm người làm nghề nghiêm túc và có tư duy rõ ràng.</h2>
+          </div>
+          <div className="editorial-intro-layout__aside">
+            <p>Các vị trí dưới đây phù hợp với người muốn phát triển chuyên môn trong môi trường thiết kế gọn, rõ và thực tế.</p>
+          </div>
+        </div>
+        <div className="container jobs-list jobs-list--premium">
           {siteData.jobs.map((job) => (
             <JobCard key={job.slug} job={job} />
           ))}

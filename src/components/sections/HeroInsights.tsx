@@ -11,9 +11,13 @@ export function HeroInsights() {
   ]
 
   return (
-    <div className="hero-insights">
-      {insights.map((item) => (
-        <article key={item.label} className="hero-insight-card">
+    <div className="hero-insights" data-reveal>
+      {insights.map((item, index) => (
+        <article
+          key={item.label}
+          className="hero-insight-card"
+          style={{ transitionDelay: `${120 + index * 120}ms` }}
+        >
           <strong>{item.value}</strong>
           <span>{item.label}</span>
         </article>

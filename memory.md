@@ -23,3 +23,14 @@
 - Rebalanced homepage/site motion: standardized more sections to scroll-reveal behavior, added gentle page-enter transition, and restored richer hover/image micro-interactions so the site feels polished again.
 - Removed the homepage "Lĩnh vực công trình" and "Giá trị cốt lõi" sections to keep the landing page tighter and more focused.
 - Fixed horizontal overflow so the site fits viewport width cleanly without unwanted sideways scrolling, mainly by making the premium hero use safe full-width container sizing instead of raw 100vw offset tricks.
+- Enhanced homepage hero motion with layered entrance animation, glow effect, floating aside cards, and staggered hero insight reveal for a more premium feel.
+- Unified inner-page heroes with background-image banners and shortened hero copy across About, Services, Projects, News, Careers, and Contact for a cleaner, more concise presentation.
+- Saved a full premium-direction checklist and content/UI guidance to `musthave.md` so future refinements can follow one consistent standard.
+- Continued the premium refactor by aligning detail-page heroes to the same background-image style and shortening detail hero copy across services, projects, news, and careers.
+- Added a clearer trust-signals block near the top of the homepage to foreground TDS core capabilities in a more premium, business-like way.
+- Upgraded Contact and Footer sections to feel more premium and business-ready by clarifying consultation flow, tightening contact guidance, and restructuring the footer around brand, capabilities, navigation, and service scope.
+- Continued tightening homepage/content copy by shortening service, project, process, and supporting section text to sound more concise, direct, and premium.
+- Started reducing template-like repetition across inner pages by tightening About/News/Careers copy and adding more visual hierarchy to project, news, and job listing cards.
+- Refined Services, News, and Careers listing pages together: services now use a more editorial split layout, while news/careers gained intro blocks and stronger hierarchy to feel less like simple catalog grids.
+- Tightened typography/spacing tokens, shortened long copy in service/project/news detail views, and added a dedicated trust-data band as a placeholder structure for real company metrics to strengthen credibility later.
+- Refined that trust-data band to stay honest about placeholders, while further tightening detail-page hierarchy, article spacing, and compact summary cards to better match the premium rules in `musthave.md`.

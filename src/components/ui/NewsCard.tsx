@@ -26,6 +26,7 @@ export function NewsCard({ post }: NewsCardProps) {
       </div>
       <h3>{post.title}</h3>
       <p>{post.summary}</p>
+      <div className="news-card__accent" />
       <Link to={`/tin-tuc/${post.slug}`}>Đọc bài viết</Link>
     </article>
   )

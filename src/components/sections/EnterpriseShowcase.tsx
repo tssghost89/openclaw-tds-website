@@ -13,12 +13,12 @@ export function EnterpriseShowcase() {
           />
           <div className="enterprise-showcase__list">
             <article className="info-card">
-              <h3>Thiết kế cho nhiều lĩnh vực</h3>
-              <p>Từ công trình giáo dục, y tế đến công nghiệp và công cộng, cách làm việc luôn giữ được sự chỉn chu và logic rõ ràng.</p>
+              <h3>Nhiều nhóm công trình</h3>
+              <p>Giáo dục, y tế, công nghiệp và công cộng.</p>
             </article>
             <article className="info-card">
-              <h3>Trình bày phương án mạch lạc</h3>
-              <p>Bản vẽ kỹ thuật, phối cảnh 3D và tài liệu trình bày được phát triển đồng bộ để hỗ trợ quyết định nhanh và chính xác hơn.</p>
+              <h3>Triển khai đồng bộ</h3>
+              <p>2D kỹ thuật, 3D phối cảnh và tài liệu trình bày.</p>
             </article>
           </div>
         </div>
@@ -27,13 +27,13 @@ export function EnterpriseShowcase() {
             src="/assets/industrial-project.jpg"
             alt="Dự án công nghiệp hiện đại"
             eyebrow="Industrial"
-            title="Giải pháp cho khu công nghiệp và nhà xưởng với trọng tâm là vận hành và mở rộng lâu dài"
+            title="Giải pháp cho khu công nghiệp và nhà xưởng"
           />
           <ImagePanel
             src="/assets/school-project.jpg"
             alt="Không gian trường học hiện đại"
             eyebrow="Education"
-            title="Không gian học tập được tổ chức rõ ràng, thân thiện và giàu tính kết nối"
+            title="Không gian học tập rõ ràng và thân thiện"
           />
         </div>
       </div>

@@ -8,16 +8,18 @@ export function ContactPage() {
     <>
       <PageHero
         eyebrow="Liên hệ"
-        title="Trao đổi nhu cầu thiết kế và tìm hướng đi phù hợp cho dự án của bạn"
-        description="Nếu bạn đang chuẩn bị một dự án mới hoặc muốn rà soát phương án hiện có, TDS sẵn sàng đồng hành từ những bước đầu tiên."
+        title="Trao đổi về dự án của bạn"
+        description="Chia sẻ nhu cầu để TDS tư vấn hướng phù hợp."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Liên hệ' }]}
+        imageSrc="/assets/hero-overlay.jpg"
+        imageAlt="Liên hệ tư vấn thiết kế cùng TDS"
       />
       <section className="section section--light">
-        <div className="container contact-layout">
-          <div className="card-grid card-grid--two">
-            <article className="info-card">
-              <h3>Thông tin liên hệ</h3>
-              <p>{siteData.footer.description}</p>
+        <div className="container contact-layout contact-layout--premium">
+          <div className="contact-stack">
+            <article className="info-card info-card--feature">
+              <h3>Liên hệ tư vấn</h3>
+              <p>TDS tiếp nhận nhu cầu thiết kế cho công trình dân dụng, công cộng và công nghiệp.</p>
               <ul>
                 <li>{siteData.footer.address}</li>
                 <li>{siteData.footer.email}</li>
@@ -25,13 +27,29 @@ export function ContactPage() {
               </ul>
             </article>
             <article className="info-card">
-              <h3>Gửi yêu cầu dự án</h3>
-              <p>Chia sẻ ngắn gọn loại công trình, mục tiêu sử dụng và những điều bạn đang quan tâm. TDS sẽ phản hồi với hướng tư vấn phù hợp.</p>
-              <div className="form-placeholder">
-                <span>Họ và tên</span>
-                <span>Email</span>
-                <span>Loại hình công trình</span>
-                <span>Nội dung yêu cầu</span>
+              <h3>Quy trình trao đổi</h3>
+              <div className="contact-process">
+                <div>
+                  <strong>01</strong>
+                  <p>Tiếp nhận nhu cầu và loại công trình.</p>
+                </div>
+                <div>
+                  <strong>02</strong>
+                  <p>Rà soát phạm vi và hướng tiếp cận phù hợp.</p>
+                </div>
+                <div>
+                  <strong>03</strong>
+                  <p>Phản hồi bước đầu để bắt đầu làm việc.</p>
+                </div>
+              </div>
+            </article>
+            <article className="info-card">
+              <h3>Thông tin nên gửi</h3>
+              <div className="form-placeholder form-placeholder--premium">
+                <span>Họ và tên / đơn vị</span>
+                <span>Email / số điện thoại</span>
+                <span>Loại công trình / quy mô</span>
+                <span>Nhu cầu thiết kế / phạm vi công việc</span>
               </div>
             </article>
           </div>
@@ -39,7 +57,7 @@ export function ContactPage() {
             src="/assets/about-architecture.jpg"
             alt="Hình ảnh minh họa không gian làm việc kiến trúc"
             eyebrow="Consultation flow"
-            title="Một cuộc trao đổi rõ ràng từ đầu sẽ giúp phương án đi đúng hướng ngay từ những bước đầu tiên"
+            title="Một trao đổi rõ ràng từ đầu sẽ giúp dự án đi đúng hướng hơn"
           />
         </div>
       </section>

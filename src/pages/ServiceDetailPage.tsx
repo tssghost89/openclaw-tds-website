@@ -27,14 +27,16 @@ export function ServiceDetailPage() {
   return (
     <>
       <PageHero
-        eyebrow="Chi tiết dịch vụ"
+        eyebrow="Dịch vụ"
         title={service.title}
-        description={service.description}
+        description="Phạm vi dịch vụ và đầu ra chính."
         breadcrumbs={[
           { label: 'Trang chủ', href: '/' },
           { label: 'Dịch vụ', href: '/dich-vu' },
           { label: service.title },
         ]}
+        imageSrc={imageSrc}
+        imageAlt={service.title}
       />
       <section className="section section--compact-top">
         <div className="container detail-hero-grid">
@@ -92,8 +94,8 @@ export function ServiceDetailPage() {
           </article>
           <div className="detail-visual detail-visual--service reveal-up">
             <span>Service Perspective</span>
-            <h3>Giải pháp được phát triển để phục vụ mục tiêu sử dụng thật sự</h3>
-            <p>TDS ưu tiên cách tiếp cận rõ ràng, giúp chủ đầu tư hình dung đúng phạm vi công việc và dễ ra quyết định trong từng giai đoạn.</p>
+            <h3>Giải pháp bám sát nhu cầu sử dụng</h3>
+            <p>Phạm vi công việc rõ, đầu ra rõ và dễ triển khai.</p>
           </div>
         </div>
       </section>

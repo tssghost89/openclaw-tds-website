@@ -18,16 +18,18 @@ export function NewsDetailPage() {
       <PageHero
         eyebrow={post.category}
         title={post.title}
-        description={post.summary}
+        description="Bài viết ngắn gọn từ TDS."
         breadcrumbs={[
           { label: 'Trang chủ', href: '/' },
           { label: 'Tin tức', href: '/tin-tuc' },
           { label: post.title },
         ]}
+        imageSrc="/assets/news-editorial.jpg"
+        imageAlt={post.title}
       />
       <section className="section section--compact-top">
         <div className="container editorial-layout">
-          <article className="info-card article-card reveal-up">
+          <article className="info-card article-card article-card--premium reveal-up">
             {post.content.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
@@ -40,7 +42,7 @@ export function NewsDetailPage() {
               </ul>
             </div>
             <EditorialQuote
-              quote="Một nội dung tốt không cần quá nhiều lời, chỉ cần đủ rõ để người đọc thấy hữu ích và tin tưởng"
+              quote="Nội dung tốt không cần nhiều lời, chỉ cần đủ rõ để người đọc thấy hữu ích."
               caption="Biên tập nội dung cho TDS"
             />
           </article>
@@ -48,7 +50,7 @@ export function NewsDetailPage() {
             src="/assets/news-editorial.jpg"
             alt="Hình ảnh minh họa cho bài viết chuyên môn"
             eyebrow="Editorial cover"
-            title="Những bài viết được chọn lọc để mang lại góc nhìn rõ ràng và hữu ích cho người đọc"
+            title="Bài viết được chọn lọc để mang lại góc nhìn rõ và hữu ích"
           />
         </div>
       </section>

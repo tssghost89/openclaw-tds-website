@@ -29,12 +29,14 @@ export function ProjectDetailPage() {
       <PageHero
         eyebrow={project.category}
         title={project.title}
-        description={project.description}
+        description="Thông tin chính và cách tiếp cận dự án."
         breadcrumbs={[
           { label: 'Trang chủ', href: '/' },
           { label: 'Dự án', href: '/du-an' },
           { label: project.title },
         ]}
+        imageSrc={imageSrc}
+        imageAlt={project.title}
       />
       <section className="section section--compact-top">
         <div className="container detail-hero-grid">
@@ -44,7 +46,7 @@ export function ProjectDetailPage() {
             eyebrow={project.category}
             title={project.title}
           />
-          <div className="detail-summary-card reveal-up reveal-delay-1">
+          <div className="detail-summary-card detail-summary-card--compact reveal-up reveal-delay-1">
             <span className="section-heading__eyebrow">Bài toán dự án</span>
             <p>{project.challenge}</p>
           </div>
@@ -69,14 +71,14 @@ export function ProjectDetailPage() {
               ))}
             </div>
             <EditorialQuote
-              quote="Một dự án tốt luôn bắt đầu từ nhu cầu rõ ràng và kết thúc ở trải nghiệm sử dụng mạch lạc"
+              quote="Một dự án tốt bắt đầu từ nhu cầu rõ ràng và kết thúc ở trải nghiệm sử dụng tốt."
               caption="Góc nhìn từ TDS"
             />
           </div>
           <div className="detail-visual detail-visual--project" data-reveal>
             <span>{project.category}</span>
             <h3>{project.meta}</h3>
-            <p>Dự án được phát triển theo cách cân bằng giữa hình ảnh kiến trúc, công năng sử dụng và khả năng vận hành lâu dài.</p>
+            <p>Cân bằng giữa hình ảnh công trình, công năng và vận hành.</p>
           </div>
         </div>
       </section>

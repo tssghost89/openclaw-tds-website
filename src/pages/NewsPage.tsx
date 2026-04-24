@@ -8,9 +8,11 @@ export function NewsPage() {
     <>
       <PageHero
         eyebrow="Tin tức"
-        title="Kiến thức và cập nhật xoay quanh thiết kế xây dựng"
-        description="Những bài viết ngắn gọn, rõ ràng và hữu ích cho người đang quan tâm đến thiết kế xây dựng."
+        title="Tin tức và chia sẻ"
+        description="Một số nội dung ngắn gọn từ TDS."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Tin tức' }]}
+        imageSrc="/assets/news-editorial.jpg"
+        imageAlt="Tin tức và chia sẻ từ TDS"
       />
       <section className="section section--light section--compact-top">
         <div className="container">
@@ -18,7 +20,16 @@ export function NewsPage() {
         </div>
       </section>
       <section className="section section--compact-top">
-        <div className="container card-grid card-grid--three">
+        <div className="container editorial-intro-layout">
+          <div className="editorial-intro-layout__main">
+            <span className="section-heading__eyebrow">Biên tập nội dung</span>
+            <h2>Nội dung ngắn gọn, tập trung vào điều quan trọng.</h2>
+          </div>
+          <div className="editorial-intro-layout__aside">
+            <p>TDS chia sẻ các góc nhìn ngắn, rõ và có ích cho người đang làm việc với bài toán thiết kế xây dựng.</p>
+          </div>
+        </div>
+        <div className="container card-grid card-grid--three news-grid-premium">
           {siteData.news.map((post) => (
             <NewsCard key={post.slug} post={post} />
           ))}
