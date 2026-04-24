@@ -12,6 +12,8 @@ const projectImages = {
   'trung-tam-y-te-khu-vuc': '/assets/hospital-project.jpg',
 } as const
 
+const galleryImages = ['/assets/project-detail-1.jpg', '/assets/project-detail-2.jpg', '/assets/project-detail-3.jpg']
+
 export function ProjectDetailPage() {
   const { slug } = useParams()
   const project = siteData.projects.find((item) => item.slug === slug)
@@ -42,7 +44,7 @@ export function ProjectDetailPage() {
             eyebrow={project.category}
             title={project.title}
           />
-          <div className="detail-summary-card reveal-up reveal-delay-1">
+          <div className="detail-summary-card" data-reveal>
             <span className="section-heading__eyebrow">Bài toán dự án</span>
             <p>{project.challenge}</p>
           </div>
@@ -55,11 +57,14 @@ export function ProjectDetailPage() {
               <DetailFeatureList title="Giải pháp thiết kế" items={project.solution} />
               <DetailFeatureList title="Kết quả đạt được" items={project.outcomes} />
             </div>
-            <div className="card-grid card-grid--three gallery-grid">
-              {project.gallery.map((item) => (
-                <article key={item} className="gallery-card reveal-up">
-                  <span>Gallery</span>
-                  <h3>{item}</h3>
+            <div className="card-grid card-grid--three gallery-grid gallery-grid--image">
+              {project.gallery.map((item, index) => (
+                <article key={item} className="gallery-card gallery-card--image" data-reveal>
+                  <img src={galleryImages[index % galleryImages.length]} alt={item} />
+                  <div className="gallery-card__overlay">
+                    <span>Gallery</span>
+                    <h3>{item}</h3>
+                  </div>
                 </article>
               ))}
             </div>
@@ -68,7 +73,7 @@ export function ProjectDetailPage() {
               caption="Góc nhìn từ TDS"
             />
           </div>
-          <div className="detail-visual detail-visual--project reveal-up">
+          <div className="detail-visual detail-visual--project" data-reveal>
             <span>{project.category}</span>
             <h3>{project.meta}</h3>
             <p>Dự án được phát triển theo cách cân bằng giữa hình ảnh kiến trúc, công năng sử dụng và khả năng vận hành lâu dài.</p>

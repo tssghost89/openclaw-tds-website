@@ -10,8 +10,9 @@ export function HeroSection({ hero }: HeroSectionProps) {
   return (
     <section className="hero-section hero-section--premium" id="trang-chu">
       <div className="container">
-        <div className="hero-banner reveal-up">
+        <div className="hero-banner" data-reveal>
           <img src="/assets/hero-building.jpg" alt="Công trình kiến trúc hiện đại" className="hero-banner__image" />
+          <img src="/assets/hero-overlay.jpg" alt="Chi tiết kiến trúc hiện đại" className="hero-banner__image hero-banner__image--secondary" />
           <div className="hero-banner__overlay" />
           <div className="hero-banner__content">
             <span className="section-heading__eyebrow">{hero.eyebrow}</span>
@@ -22,7 +23,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
               <PrimaryButton label={hero.secondaryAction} variant="secondary" to="/du-an" />
             </div>
           </div>
-          <div className="hero-banner__aside reveal-up reveal-delay-1">
+          <div className="hero-banner__aside">
             <div className="hero-floating-card hero-floating-card--glass">
               <strong>TDS Project Vision</strong>
               <p>Thiết kế được phát triển để công trình giữ được hình ảnh chuyên nghiệp, công năng rõ ràng và hiệu quả sử dụng lâu dài.</p>

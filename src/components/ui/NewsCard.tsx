@@ -5,11 +5,19 @@ interface NewsCardProps {
   post: NewsItem
 }
 
+const newsImages = {
+  'vai-tro-phoi-canh-3d': '/assets/news-3d.jpg',
+  'toi-uu-cong-nang-nha-xuong': '/assets/news-factory.jpg',
+  'thiet-ke-truong-hoc-hien-dai': '/assets/news-school.jpg',
+} as const
+
 export function NewsCard({ post }: NewsCardProps) {
+  const imageSrc = newsImages[post.slug as keyof typeof newsImages] ?? '/assets/news-editorial.jpg'
+
   return (
-    <article className="news-card reveal-up">
+    <article className="news-card" data-reveal>
       <div className="news-card__cover news-card__cover--image">
-        <img src="/assets/news-editorial.jpg" alt={post.title} />
+        <img src={imageSrc} alt={post.title} />
         <span>{post.category}</span>
       </div>
       <div className="news-card__meta">

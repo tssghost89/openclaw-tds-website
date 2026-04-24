@@ -15,4 +15,5 @@
 - Expanded service, project, news, and career detail pages with richer concrete content such as scope, FAQ, outcomes, gallery items, takeaways, and responsibilities.
 - Upgraded the homepage with additional premium enterprise sections including capability strip, trust signals, hero insights, enterprise showcase, insight metrics, and leadership statement.
 - Redesigned the homepage hero into a large premium image banner with text overlay, improved page transitions and hover/micro-interactions, and refined visual harmony across homepage/detail sections.
+- Added more content-specific imagery for services, news, related cards, and richer project detail galleries, while tightening typography rhythm and spacing across the site.
 - Verified production build successfully after the latest changes.
