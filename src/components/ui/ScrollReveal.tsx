@@ -1,8 +1,26 @@
 import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 export function ScrollReveal() {
+  const location = useLocation()
+
   useEffect(() => {
-    const elements = document.querySelectorAll<HTMLElement>('[data-reveal]')
+    const elements = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'))
+
+    elements.forEach((element) => {
+      element.classList.remove('is-visible')
+    })
+
+    const revealVisibleElements = () => {
+      const viewportHeight = window.innerHeight || document.documentElement.clientHeight
+
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect()
+        if (rect.top < viewportHeight - 48) {
+          element.classList.add('is-visible')
+        }
+      })
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -16,10 +34,18 @@ export function ScrollReveal() {
       { threshold: 0.12, rootMargin: '0px 0px -40px 0px' },
     )
 
-    elements.forEach((element) => observer.observe(element))
+    const raf = window.requestAnimationFrame(() => {
+      revealVisibleElements()
+      elements
+        .filter((element) => !element.classList.contains('is-visible'))
+        .forEach((element) => observer.observe(element))
+    })
 
-    return () => observer.disconnect()
-  }, [])
+    return () => {
+      window.cancelAnimationFrame(raf)
+      observer.disconnect()
+    }
+  }, [location.pathname])
 
   return null
 }

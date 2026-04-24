@@ -35,3 +35,4 @@
 - Tightened typography/spacing tokens, shortened long copy in service/project/news detail views, and added a dedicated trust-data band as a placeholder structure for real company metrics to strengthen credibility later.
 - Refined that trust-data band to stay honest about placeholders, while further tightening detail-page hierarchy, article spacing, and compact summary cards to better match the premium rules in `musthave.md`.
 - Continued the premium polish pass by reducing homepage repetition between trust sections, simplifying detail-page labels, and tightening editorial wording to stay more restrained and corporate.
+- Fixed a route-change reveal bug: scroll-reveal now re-initializes on pathname changes and immediately reveals already-in-viewport content, preventing sections from staying hidden until manual refresh while keeping the existing motion style.
