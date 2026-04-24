@@ -141,7 +141,7 @@ body.page-is-entering .app-shell {
 .page-hero__panel .section-heading__eyebrow, .page-hero__panel h1, .page-hero__panel p, .page-hero .breadcrumbs, .page-hero .breadcrumbs a, .page-hero .breadcrumbs span { color: var(--color-neutral-0); }
 .page-hero .breadcrumbs { margin-bottom: 20px; color: rgba(255,255,255,0.78); }
 .page-hero .breadcrumbs__divider { color: rgba(255,255,255,0.42); }
-.page-hero__panel p { color: rgba(255,255,255,0.82); }
+.page-hero__panel p { color: rgba(255,255,255,0.94); text-shadow: 0 1px 2px rgba(15,23,42,0.18); }
 .hero-section h1, .page-hero h1, .empty-state h1 { margin: 16px 0 24px; font-size: clamp(2.75rem, 5vw, 4.5rem); line-height: 1.04; letter-spacing: -0.04em; max-width: 12ch; }
 .hero-section p, .page-hero p, .empty-state p { margin: 0; font-size: 1.125rem; line-height: 1.8; color: var(--color-neutral-600); max-width: 62ch; }
 .hero-section__actions { display: flex; gap: 16px; margin-top: 32px; }
