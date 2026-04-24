@@ -143,7 +143,7 @@ body.page-is-entering .app-shell {
 .page-hero .breadcrumbs__divider { color: rgba(255,255,255,0.42); }
 .page-hero__panel p { color: #ffffffd1; text-shadow: 0 1px 2px rgba(15,23,42,0.18); }
 .hero-section h1, .page-hero h1, .empty-state h1 { margin: 16px 0 24px; font-size: clamp(2.75rem, 5vw, 4.5rem); line-height: 1.04; letter-spacing: -0.04em; max-width: 12ch; }
-.hero-section p, .page-hero p, .empty-state p { margin: 0; font-size: 1.125rem; line-height: 1.8; color: var(--color-neutral-600); max-width: 62ch; }
+.hero-banner__content p, .page-hero__panel p, .empty-state p { margin: 0; font-size: 1.125rem; line-height: 1.8; max-width: 62ch; }
 .hero-section__actions { display: flex; gap: 16px; margin-top: 32px; }
 .hero-section__metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 40px; }
 .metric-card { padding: 20px; border-radius: 22px; background: linear-gradient(180deg, rgba(248,250,252,0.96), rgba(241,245,249,0.86)); border: 1px solid rgba(203,213,225,0.6); transition: transform 220ms ease, box-shadow 220ms ease; }
