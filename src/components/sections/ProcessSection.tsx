@@ -11,12 +11,12 @@ export function ProcessSection({ steps }: ProcessSectionProps) {
       <div className="container">
         <SectionHeading
           eyebrow="Quy trình làm việc"
-          title="Mỗi dự án đều được phát triển theo một tiến trình rõ ràng, minh bạch và có thể kiểm soát"
-          description="TDS chú trọng một quy trình đủ chặt chẽ để kiểm soát chất lượng, nhưng vẫn đủ linh hoạt để phù hợp với từng loại công trình và mục tiêu đầu tư."
+          title="Quy trình làm việc rõ ràng"
+          description="Các bước chính từ tiếp nhận yêu cầu đến hoàn thiện hồ sơ."
         />
         <div className="timeline-grid">
           {steps.map((step, index) => (
-            <article key={step.title} className="timeline-card reveal-up">
+            <article key={step.title} className="timeline-card" data-reveal>
               <span>{`0${index + 1}`}</span>
               <h3>{step.title}</h3>
               <p>{step.description}</p>

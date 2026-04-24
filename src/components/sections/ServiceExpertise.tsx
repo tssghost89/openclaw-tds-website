@@ -20,14 +20,14 @@ export function ServiceExpertise({ services }: ServiceExpertiseProps) {
       <div className="container">
         <SectionHeading
           eyebrow="Dịch vụ chuyên môn"
-          title="Giải pháp thiết kế được phát triển rõ ràng từ bước đầu tiên đến khi hoàn thiện hồ sơ"
-          description="TDS đồng hành cùng chủ đầu tư từ giai đoạn định hướng, tổ chức công năng cho đến trình bày phương án bằng 2D và 3D một cách mạch lạc."
+          title="Dịch vụ thiết kế chính"
+          description="Các nhóm dịch vụ cốt lõi cho từng nhu cầu triển khai."
         />
         <div className="card-grid card-grid--three premium-service-grid">
           {services.map((service, index) => {
             const imageSrc = serviceImages[service.slug as keyof typeof serviceImages] ?? '/assets/service-architecture.jpg'
             return (
-              <article key={service.title} className="info-card premium-service-card reveal-up">
+              <article key={service.title} className="info-card premium-service-card" data-reveal>
                 <div className="premium-service-card__media premium-service-card__media--image">
                   <img src={imageSrc} alt={service.title} />
                   <div className="premium-service-card__overlay">

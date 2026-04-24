@@ -8,8 +8,8 @@ export function EnterpriseShowcase() {
         <div>
           <SectionHeading
             eyebrow="Năng lực triển khai"
-            title="Một đối tác thiết kế đáng tin cậy cần vừa hiểu công năng, vừa kiểm soát được hình ảnh công trình"
-            description="TDS phát triển giải pháp từ góc nhìn tổng thể: bối cảnh dự án, mục tiêu sử dụng, trải nghiệm tiếp cận và khả năng vận hành về lâu dài."
+            title="Năng lực theo từng loại công trình"
+            description="Giải pháp được phát triển theo đúng tính chất sử dụng của từng dự án."
           />
           <div className="enterprise-showcase__list">
             <article className="info-card">

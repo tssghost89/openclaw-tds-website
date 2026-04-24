@@ -19,3 +19,7 @@
 - Simplified the homepage by removing excess sections, reducing copy density, trimming hero/about/sector content, and keeping only the strongest core sections for a cleaner premium presentation.
 - Shortened copy across core pages and `siteData.ts` so content stays clearer, lighter, and easier to scan while preserving the main message.
 - Verified production build successfully after the latest changes.
+- Restored short descriptive subtexts for homepage main section headings and rewrote long titles/copy into shorter, cleaner wording instead of removing descriptions entirely.
+- Rebalanced homepage/site motion: standardized more sections to scroll-reveal behavior, added gentle page-enter transition, and restored richer hover/image micro-interactions so the site feels polished again.
+- Removed the homepage "Lĩnh vực công trình" and "Giá trị cốt lõi" sections to keep the landing page tighter and more focused.
+- Fixed horizontal overflow so the site fits viewport width cleanly without unwanted sideways scrolling, mainly by making the premium hero use safe full-width container sizing instead of raw 100vw offset tricks.

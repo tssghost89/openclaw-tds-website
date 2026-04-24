@@ -11,8 +11,8 @@ export function SectorExpertise({ sectors }: SectorExpertiseProps) {
       <div className="container">
         <SectionHeading
           eyebrow="Lĩnh vực công trình"
-          title="Giải pháp thiết kế cho nhiều nhóm công trình với cùng một tinh thần chỉn chu và mạch lạc"
-          description="Mỗi lĩnh vực có yêu cầu riêng, nhưng đều cần một cách tiếp cận rõ ràng về công năng, hình ảnh và trải nghiệm sử dụng."
+          title="Các lĩnh vực TDS triển khai"
+          description="Mỗi nhóm công trình có yêu cầu riêng và cách xử lý phù hợp."
         />
         <div className="card-grid card-grid--four sector-grid-premium">
           {sectors.slice(0, 6).map((sector, index) => (

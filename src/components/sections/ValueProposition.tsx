@@ -11,8 +11,8 @@ export function ValueProposition({ values }: ValuePropositionProps) {
       <div className="container">
         <SectionHeading
           eyebrow="Giá trị cốt lõi"
-          title="Một giải pháp tốt luôn cân bằng giữa công năng, hình ảnh và khả năng triển khai"
-          description="Đó là cách TDS giữ chất lượng thiết kế nhất quán trên nhiều loại hình công trình khác nhau."
+          title="Giá trị TDS theo đuổi"
+          description="Những nguyên tắc cốt lõi trong mỗi phương án thiết kế."
         />
         <div className="card-grid card-grid--two value-grid-compact">
           {values.slice(0, 4).map((value) => (

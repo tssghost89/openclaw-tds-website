@@ -14,8 +14,8 @@ export function AboutSnapshot({ about }: AboutSnapshotProps) {
         <div className="about-snapshot__content">
           <SectionHeading
             eyebrow={about.eyebrow}
-            title={about.title}
-            description={about.description}
+            title="Thiết kế rõ công năng, dễ triển khai"
+            description="TDS phát triển phương án ngắn gọn, rõ ràng và bám sát nhu cầu sử dụng thực tế."
           />
           <div className="about-snapshot__quote">
             <span>Design for real use</span>

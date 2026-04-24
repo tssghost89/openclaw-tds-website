@@ -12,8 +12,8 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
       <div className="container">
         <SectionHeading
           eyebrow="Dự án tiêu biểu"
-          title="Những dự án thể hiện rõ cách TDS xử lý công năng, hình ảnh kiến trúc và trải nghiệm sử dụng"
-          description="Mỗi dự án đều được phát triển từ bối cảnh cụ thể, nhu cầu sử dụng rõ ràng và mục tiêu đầu tư thực tế của chủ đầu tư."
+          title="Một số dự án tiêu biểu"
+          description="Các dự án tiêu biểu theo từng bài toán thiết kế."
         />
         <div className="project-list premium-project-list">
           {projects.map((project, index) => (

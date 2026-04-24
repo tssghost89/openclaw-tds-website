@@ -7,7 +7,7 @@ interface JobCardProps {
 
 export function JobCard({ job }: JobCardProps) {
   return (
-    <article className="job-card reveal-up">
+    <article className="job-card" data-reveal>
       <div>
         <h3>{job.title}</h3>
         <p>{job.summary}</p>
