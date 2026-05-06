@@ -8,15 +8,15 @@ export function ProjectsPage() {
     <>
       <PageHero
         eyebrow="Dự án"
-        title="Một số dự án tiêu biểu"
-        description="Các dự án theo từng bài toán thiết kế."
+        title="Một số dự án và nhóm công việc tiêu biểu"
+        description="Dữ liệu dự án được biên tập lại từ hồ sơ năng lực TDS Việt Nam."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Dự án' }]}
         imageSrc="/assets/project-detail-1.jpg"
         imageAlt="Dự án tiêu biểu của TDS"
       />
       <section className="section section--light section--compact-top">
         <div className="container">
-          <FilterChips items={['Tất cả', 'Tòa nhà', 'Trường học', 'Bệnh viện', 'Công cộng', 'Công nghiệp', 'Nhà xưởng']} />
+          <FilterChips items={['Tất cả', 'Giao thông hạ tầng', 'Khảo sát giao thông', 'Nền móng – cọc']} />
         </div>
       </section>
       <section className="section section--compact-top">

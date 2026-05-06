@@ -7,9 +7,9 @@ import { RelatedLinks } from '../components/ui/RelatedLinks'
 import { siteData } from '../data/siteData'
 
 const projectImages = {
-  'khoi-nha-dieu-hanh-khu-cong-nghiep': '/assets/industrial-project.jpg',
-  'truong-lien-cap-hien-dai': '/assets/school-project.jpg',
-  'trung-tam-y-te-khu-vuc': '/assets/hospital-project.jpg',
+  'cao-toc-huu-nghi-chi-lang': '/assets/industrial-project.jpg',
+  'cau-rao-1-va-song-hoa': '/assets/project-detail-1.jpg',
+  'du-an-gamuda-va-coc-khoan-nhoi': '/assets/project-detail-3.jpg',
 } as const
 
 const galleryImages = ['/assets/project-detail-1.jpg', '/assets/project-detail-2.jpg', '/assets/project-detail-3.jpg']
@@ -29,7 +29,7 @@ export function ProjectDetailPage() {
       <PageHero
         eyebrow={project.category}
         title={project.title}
-        description="Thông tin chính và cách tiếp cận dự án."
+        description="Thông tin chính, phạm vi công việc và cách tiếp cận triển khai theo dữ liệu từ hồ sơ năng lực."
         breadcrumbs={[
           { label: 'Trang chủ', href: '/' },
           { label: 'Dự án', href: '/du-an' },
@@ -56,7 +56,7 @@ export function ProjectDetailPage() {
         <div className="container project-detail-layout">
           <div className="project-detail-layout__main">
             <div className="card-grid card-grid--two">
-              <DetailFeatureList title="Giải pháp thiết kế" items={project.solution} />
+              <DetailFeatureList title="Phạm vi và cách tiếp cận" items={project.solution} />
               <DetailFeatureList title="Kết quả đạt được" items={project.outcomes} />
             </div>
             <div className="card-grid card-grid--three gallery-grid gallery-grid--image">
@@ -64,21 +64,21 @@ export function ProjectDetailPage() {
                 <article key={item} className="gallery-card gallery-card--image" data-reveal>
                   <img src={galleryImages[index % galleryImages.length]} alt={item} />
                   <div className="gallery-card__overlay">
-                    <span>Gallery</span>
+                    <span>Dữ liệu dự án</span>
                     <h3>{item}</h3>
                   </div>
                 </article>
               ))}
             </div>
             <EditorialQuote
-              quote="Một dự án tốt bắt đầu từ nhu cầu rõ ràng và kết thúc ở trải nghiệm sử dụng tốt."
-              caption="Góc nhìn từ TDS"
+              quote="Mỗi dự án trong hồ sơ năng lực phản ánh năng lực triển khai thực tế, khả năng phối hợp kỹ thuật và kinh nghiệm làm việc với nhiều loại công trình khác nhau."
+              caption="TDS Việt Nam"
             />
           </div>
           <div className="detail-visual detail-visual--project" data-reveal>
             <span>{project.category}</span>
             <h3>{project.meta}</h3>
-            <p>Cân bằng giữa hình ảnh công trình, công năng và vận hành.</p>
+            <p>Thông tin được biên tập lại từ HSNL để thể hiện đúng hơn kinh nghiệm triển khai thực tế của doanh nghiệp.</p>
           </div>
         </div>
       </section>

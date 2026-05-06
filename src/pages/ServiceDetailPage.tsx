@@ -6,12 +6,12 @@ import { RelatedLinks } from '../components/ui/RelatedLinks'
 import { siteData } from '../data/siteData'
 
 const serviceImages = {
-  'thiet-ke-2d-ky-thuat': '/assets/office-project.jpg',
-  'thiet-ke-3d-phoi-canh': '/assets/hero-building.jpg',
-  'thiet-ke-kien-truc-cong-trinh': '/assets/about-architecture.jpg',
-  'thiet-ke-canh-quan': '/assets/school-project.jpg',
-  'toi-uu-cong-nang-su-dung': '/assets/hospital-project.jpg',
-  'tu-van-giai-phap-thiet-ke': '/assets/industrial-project.jpg',
+  'thi-cong-xay-lap-va-tong-thau': '/assets/industrial-project.jpg',
+  'khao-sat-dia-hinh-dia-chat-cong-trinh': '/assets/project-detail-1.jpg',
+  'thi-nghiem-va-kiem-dinh-chat-luong-cong-trinh': '/assets/project-detail-2.jpg',
+  'thi-nghiem-coc-va-nen-mong': '/assets/project-detail-3.jpg',
+  'tu-van-dau-tu-va-tu-van-xay-dung': '/assets/about-architecture.jpg',
+  'tham-tra-thiet-ke-va-du-toan': '/assets/office-project.jpg',
 } as const
 
 export function ServiceDetailPage() {
@@ -29,7 +29,7 @@ export function ServiceDetailPage() {
       <PageHero
         eyebrow="Dịch vụ"
         title={service.title}
-        description="Phạm vi dịch vụ và đầu ra chính."
+        description="Phạm vi công việc, đầu ra kỹ thuật và nhóm nhu cầu phù hợp của dịch vụ này."
         breadcrumbs={[
           { label: 'Trang chủ', href: '/' },
           { label: 'Dịch vụ', href: '/dich-vu' },
@@ -43,7 +43,7 @@ export function ServiceDetailPage() {
           <ImagePanel
             src={imageSrc}
             alt={service.title}
-            eyebrow="Service"
+            eyebrow="Dịch vụ chuyên môn"
             title={service.title}
           />
           <div className="detail-summary-card reveal-up reveal-delay-1">
@@ -81,7 +81,7 @@ export function ServiceDetailPage() {
       <section className="section">
         <div className="container service-detail-bottom">
           <article className="info-card">
-            <h3>Quy trình thực hiện</h3>
+            <h3>Quy trình triển khai dịch vụ</h3>
             <div className="timeline-grid timeline-grid--detail">
               {service.process.map((step, index) => (
                 <div key={step} className="timeline-card reveal-up">
@@ -90,12 +90,12 @@ export function ServiceDetailPage() {
                 </div>
               ))}
             </div>
-            <Link to="/lien-he">Liên hệ tư vấn dịch vụ</Link>
+            <Link to="/lien-he">Liên hệ tư vấn dịch vụ này</Link>
           </article>
           <div className="detail-visual detail-visual--service reveal-up">
-            <span>Service Perspective</span>
-            <h3>Giải pháp bám sát nhu cầu sử dụng</h3>
-            <p>Phạm vi công việc rõ, đầu ra rõ và dễ triển khai.</p>
+            <span>Góc nhìn triển khai</span>
+            <h3>Dịch vụ được tổ chức theo hướng rõ phạm vi, rõ đầu ra và bám sát nhu cầu kỹ thuật của dự án</h3>
+            <p>TDS Việt Nam ưu tiên cách tiếp cận thực tế, đồng bộ giữa hiện trường, hồ sơ kỹ thuật và yêu cầu chất lượng.</p>
           </div>
         </div>
       </section>

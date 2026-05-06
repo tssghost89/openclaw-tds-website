@@ -8,8 +8,8 @@ export function ContactPage() {
     <>
       <PageHero
         eyebrow="Liên hệ"
-        title="Trao đổi về dự án của bạn"
-        description="Chia sẻ nhu cầu để TDS tư vấn hướng phù hợp."
+        title="Trao đổi nhu cầu dự án cùng TDS Việt Nam"
+        description="Liên hệ để được tư vấn về khảo sát, thí nghiệm, kiểm định, tư vấn kỹ thuật hoặc thi công xây dựng."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Liên hệ' }]}
         imageSrc="/assets/hero-overlay.jpg"
         imageAlt="Liên hệ tư vấn thiết kế cùng TDS"

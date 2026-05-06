@@ -8,15 +8,15 @@ export function NewsPage() {
     <>
       <PageHero
         eyebrow="Tin tức"
-        title="Tin tức và chia sẻ"
-        description="Một số nội dung ngắn gọn từ TDS."
+        title="Tin tức và chia sẻ chuyên môn"
+        description="Các nội dung định hướng theo năng lực khảo sát, thí nghiệm, kiểm định và xây dựng của TDS Việt Nam."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Tin tức' }]}
         imageSrc="/assets/news-editorial.jpg"
         imageAlt="Tin tức và chia sẻ từ TDS"
       />
       <section className="section section--light section--compact-top">
         <div className="container">
-          <FilterChips items={['Tất cả', 'Kiến thức chuyên môn', 'Giáo dục', 'Y tế', 'Công nghiệp']} />
+          <FilterChips items={['Tất cả', 'Kiến thức chuyên môn', 'Khảo sát công trình', 'Kiểm định công trình']} />
         </div>
       </section>
       <section className="section section--compact-top">

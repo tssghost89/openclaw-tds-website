@@ -8,15 +8,15 @@ export function CareersPage() {
     <>
       <PageHero
         eyebrow="Tuyển dụng"
-        title="Cơ hội tại TDS"
-        description="Một số vị trí đang tuyển."
+        title="Cơ hội nghề nghiệp tại TDS Việt Nam"
+        description="Các vị trí gợi ý bám sát năng lực hoạt động thực tế của doanh nghiệp."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Tuyển dụng' }]}
         imageSrc="/assets/office-project.jpg"
         imageAlt="Cơ hội nghề nghiệp tại TDS"
       />
       <section className="section section--light section--compact-top">
         <div className="container">
-          <FilterChips items={['Tất cả', 'Architecture', 'Technical Drawing', 'Visualization']} />
+          <FilterChips items={['Tất cả', 'Khảo sát – Địa chất', 'Thí nghiệm – Kiểm định', 'Tư vấn – Thi công']} />
         </div>
       </section>
       <section className="section section--compact-top">

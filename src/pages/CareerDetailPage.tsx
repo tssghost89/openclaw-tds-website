@@ -17,7 +17,7 @@ export function CareerDetailPage() {
       <PageHero
         eyebrow="Tuyển dụng"
         title={job.title}
-        description="Thông tin chính của vị trí này."
+        description="Thông tin chính của vị trí và định hướng công việc phù hợp với năng lực hoạt động của TDS Việt Nam."
         breadcrumbs={[
           { label: 'Trang chủ', href: '/' },
           { label: 'Tuyển dụng', href: '/tuyen-dung' },
@@ -34,7 +34,7 @@ export function CareerDetailPage() {
             <p>{job.location}</p>
           </div>
           <div className="detail-summary-card detail-summary-card--compact reveal-up reveal-delay-1">
-            <span className="section-heading__eyebrow">Mô tả nhanh</span>
+            <span className="section-heading__eyebrow">Tóm tắt vị trí</span>
             <p>{job.summary}</p>
           </div>
         </div>

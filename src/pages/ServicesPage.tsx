@@ -8,15 +8,15 @@ export function ServicesPage() {
     <>
       <PageHero
         eyebrow="Dịch vụ"
-        title="Dịch vụ thiết kế chính"
-        description="Các nhóm dịch vụ cốt lõi của TDS."
+        title="Các nhóm dịch vụ cốt lõi của TDS Việt Nam"
+        description="Rà soát theo hồ sơ năng lực: từ khảo sát, thí nghiệm, kiểm định đến thi công và tư vấn xây dựng."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Dịch vụ' }]}
         imageSrc="/assets/service-architecture.jpg"
         imageAlt="Dịch vụ thiết kế kiến trúc"
       />
       <section className="section section--light section--compact-top">
         <div className="container">
-          <FilterChips items={['Tất cả', '2D kỹ thuật', '3D phối cảnh', 'Kiến trúc', 'Công năng', 'Tư vấn']} />
+          <FilterChips items={['Tất cả', 'Thi công', 'Khảo sát', 'Thí nghiệm', 'Kiểm định', 'Tư vấn', 'Thẩm tra']} />
         </div>
       </section>
       <section className="section section--compact-top">

@@ -18,7 +18,7 @@ export function NewsDetailPage() {
       <PageHero
         eyebrow={post.category}
         title={post.title}
-        description="Bài viết ngắn gọn từ TDS."
+        description="Nội dung chuyên môn được biên tập theo định hướng năng lực và lĩnh vực hoạt động của TDS Việt Nam."
         breadcrumbs={[
           { label: 'Trang chủ', href: '/' },
           { label: 'Tin tức', href: '/tin-tuc' },
@@ -42,15 +42,15 @@ export function NewsDetailPage() {
               </ul>
             </div>
             <EditorialQuote
-              quote="Nội dung tốt không cần nhiều lời, chỉ cần đủ rõ để người đọc thấy hữu ích."
-              caption="Biên tập nội dung cho TDS"
+              quote="TDS Việt Nam ưu tiên chia sẻ các nội dung ngắn gọn nhưng có giá trị thực tiễn cho chủ đầu tư, nhà thầu và các đơn vị làm việc trong lĩnh vực xây dựng."
+              caption="Chuyên mục chia sẻ chuyên môn"
             />
           </article>
           <ImagePanel
             src="/assets/news-editorial.jpg"
             alt="Hình ảnh minh họa cho bài viết chuyên môn"
-            eyebrow="Editorial"
-            title="Góc nhìn ngắn gọn và hữu ích"
+            eyebrow="Chia sẻ chuyên môn"
+            title="Thông tin thực tế, ngắn gọn và bám sát nhu cầu kỹ thuật của dự án"
           />
         </div>
       </section>

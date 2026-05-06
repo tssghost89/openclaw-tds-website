@@ -9,8 +9,8 @@ export function AboutPage() {
     <>
       <PageHero
         eyebrow="Giới thiệu"
-        title="Thiết kế rõ công năng"
-        description="TDS theo đuổi giải pháp gọn, rõ và dễ triển khai."
+        title="Năng lực thực tế của Công ty Cổ phần TDS Việt Nam"
+        description="Doanh nghiệp được thành lập năm 2009, hoạt động trong các lĩnh vực thi công xây lắp, khảo sát, thí nghiệm, kiểm định và tư vấn xây dựng."
         breadcrumbs={[{ label: 'Trang chủ', href: '/' }, { label: 'Giới thiệu' }]}
         imageSrc="/assets/about-architecture.jpg"
         imageAlt="Không gian kiến trúc hiện đại"
@@ -20,18 +20,18 @@ export function AboutPage() {
           <div className="card-grid card-grid--two">
             <article className="info-card info-card--feature">
               <h3>Tầm nhìn</h3>
-              <p>Trở thành đối tác thiết kế đáng tin cậy cho các công trình yêu cầu tiêu chuẩn cao.</p>
+              <p>Phấn đấu trở thành doanh nghiệp xây dựng, thí nghiệm và kiểm định có uy tín và vị thế tại Việt Nam.</p>
             </article>
             <article className="info-card info-card--feature">
-              <h3>Triết lý thiết kế</h3>
-              <p>Bắt đầu từ nhu cầu thật, triển khai bằng tư duy hệ thống.</p>
+              <h3>Tôn chỉ hoạt động</h3>
+              <p>Lấy chữ TÂM, chất lượng, tiến độ, tinh thần học hỏi và sự hài lòng của khách hàng làm nền tảng phát triển doanh nghiệp.</p>
             </article>
           </div>
           <ImagePanel
             src="/assets/about-architecture.jpg"
             alt="Không gian kiến trúc hiện đại"
-            eyebrow="Studio mindset"
-            title="Thiết kế rõ ràng giúp công trình giữ giá trị sử dụng lâu dài"
+            eyebrow="Năng lực doanh nghiệp"
+            title="TDS Việt Nam kết hợp kinh nghiệm hiện trường, phòng thí nghiệm và tư vấn kỹ thuật để phục vụ dự án một cách đồng bộ"
           />
         </div>
       </section>
@@ -39,8 +39,8 @@ export function AboutPage() {
         <div className="container">
           <SectionHeading
             eyebrow="Năng lực theo lĩnh vực"
-            title="Năng lực theo từng nhóm công trình"
-            description="Giải pháp được phát triển theo đúng đặc thù sử dụng của từng dự án."
+            title="Các nhóm lĩnh vực TDS Việt Nam đang hoạt động"
+            description="Từ dân dụng, công nghiệp, giao thông đến thí nghiệm nền móng và kiểm định chất lượng công trình."
           />
           <div className="card-grid card-grid--four">
             {siteData.sectors.map((sector) => (
