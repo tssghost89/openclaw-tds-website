@@ -40,7 +40,7 @@ export const siteData: SiteData = {
   ],
   hero: {
     eyebrow: 'Công ty Cổ phần TDS Việt Nam',
-    title: 'Khảo sát, thí nghiệm, kiểm định và thi công xây dựng cho các công trình dân dụng, công nghiệp và hạ tầng',
+    title: 'Khảo sát, kiểm định và thi công công trình',
     description:
       'TDS Việt Nam được thành lập năm 2009, hoạt động trong các lĩnh vực thi công xây lắp, tư vấn xây dựng, khảo sát địa hình – địa chất, thí nghiệm kiểm định chất lượng công trình, thí nghiệm cọc và các giải pháp kỹ thuật phục vụ đầu tư xây dựng.',
     primaryAction: 'Xem dịch vụ',
